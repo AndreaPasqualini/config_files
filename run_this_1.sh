@@ -25,7 +25,10 @@ apt install -y fonts-cantarell fonts-dejavu fonts-f500 fonts-firacode fonts-noto
 echo 'Installing TeX live system'
 apt install -y texlive-base texlive-bibtex-extra texlive-fonts-recommended texlive-fonts-extra texlive-lang-english texlive-lang-italian texlive-latex-base texlive-pictures texlive-science texlive-pstricks
 
-# Installing fonts
+echo 'Installing 7z'
+apt install p7zip-full
+
+echo 'Installing MS fonts'
 apt install -y ttf-mscorefonts-installer
 
 
@@ -42,18 +45,20 @@ echo "deb https://download.sublimetext.com/ apt/stable/" | tee /etc/apt/sources.
 apt update && apt install sublime-text
 
 
-# Installing the Conda system
+# Installing the Conda system  ================================================
 wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
 sh ./Miniconda3-latest-Linux-x86_64.sh
 
 # Installing fonts found on the web  ==========================================
 echo 'Installing the Source Code Pro TTF files to /usr/share/fonts/SourceCodePro/'
-wget https://github.com/adobe-fonts/source-code-pro/archive/2.030R-ro/1.050R-it.zip
+wget https://github.com/adobe-fonts/source-code-pro/archive/2.030R-ro/1.050R-it.zip | 7z x
 
 echo 'Installing the Fira TTF files to /usr/share/fonts/Fira/'
-wget https://github.com/mozilla/Fira/archive/4.202.zip
+wget https://github.com/mozilla/Fira/archive/4.202.zip | 7z x
 
 echo 'Installing the Roboto Mono TTF files to /usr/share/fonts/RobotoMono/'
+mkdir ./RobotoMono/
+cd ./RobotoMono/
 wget https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-Bold.ttf
 wget https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-BoldItalic.ttf
 wget https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-Italic.ttf
