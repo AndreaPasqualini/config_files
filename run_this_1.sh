@@ -96,6 +96,6 @@ echo 'Installing downloaded fonts to /usr/share/fonts/'
 unzip -jq scp.zip ./SourceCodePro/
 unzip -jq fira.zip ./Fira/
 
-sudo mv ./SourceCodePro /usr/share/fonts/SourceCodePro/
-sudo mv ./Fira /usr/share/fonts/Fira/
-sudo mv ./RobotoMono /usr/share/fonts/RobotoMono/
+sudo mv ./SourceCodePro /usr/share/fonts/truetype/SourceCodePro/
+sudo mv ./Fira /usr/share/fonts/truetype/Fira/
+sudo mv ./RobotoMono /usr/share/fonts/truetype/RobotoMono/
