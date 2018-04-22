@@ -10,7 +10,7 @@ echo "Updating and Upgrading"
 apt update && apt upgrade -y
 
 # Installing packages from APT  ===============================================
-echo 'Installing GTK themes'
+echo 'Installing packages from APT'
 apt install -y \
 arc-theme \
 numix-theme \
@@ -55,12 +55,12 @@ cd ~/Downloads
 
 # Installing .deb files from the internet  ====================================
 echo 'Installing Google Chrome'
-wget -qO - https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-dpkg -i google-chrome-stable_current_amd64.deb
+wget -P ./ https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+dpkg -i ./google-chrome-stable_current_amd64.deb
 apt-get -f install
 
 echo 'Installing Sublime Text 3'
-wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg |
+wget -qO - ./ https://download.sublimetext.com/sublimehq-pub.gpg |
 apt-key add -
 apt install apt-transport-https
 echo "deb https://download.sublimetext.com/ apt/stable/" |
@@ -68,30 +68,25 @@ tee /etc/apt/sources.list.d/sublime-text.list
 apt update && apt install sublime-text
 
 
-# Installing the Conda system  ================================================
-wget -qO - https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh |
-sh
+# Downloading the Conda system  ================================================
+echo 'Downloading the (mini)Conda installer'
+wget -P ./ https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
 
 
-# Installing fonts found on the web  ==========================================
-echo 'Installing the Source Code Pro TTF files to /usr/share/fonts/SourceCodePro/'
-wget -qO - https://github.com/adobe-fonts/source-code-pro/archive/2.030R-ro/1.050R-it.zip |
-7z x
+# Downloading fonts found on the web  ==========================================
+echo 'Downloading additional fonts'
+wget -qO - ./ https://github.com/adobe-fonts/source-code-pro/archive/2.030R-ro/1.050R-it.zip | unzip
+wget -qO - ./ https://github.com/mozilla/Fira/archive/4.202.zip | unzip
 
-echo 'Installing the Fira TTF files to /usr/share/fonts/Fira/'
-wget -qO - https://github.com/mozilla/Fira/archive/4.202.zip |
-7z x
-
-echo 'Installing the Roboto Mono TTF files to /usr/share/fonts/RobotoMono/'
 mkdir ./RobotoMono/
 cd ./RobotoMono/
-wget -qO - https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-Bold.ttf
-wget -qO - https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-BoldItalic.ttf
-wget -qO - https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-Italic.ttf
-wget -qO - https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-Light.ttf
-wget -qO - https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-LightItalic.ttf
-wget -qO - https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-Medium.ttf
-wget -qO - https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-MediumItalic.ttf
-wget -qO - https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-Regular.ttf
-wget -qO - https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-Thin.ttf
-wget -qO - https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-ThinItalic.ttf
+wget -P ./ https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-Bold.ttf
+wget -P ./ https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-BoldItalic.ttf
+wget -P ./ https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-Italic.ttf
+wget -P ./ https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-Light.ttf
+wget -P ./ https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-LightItalic.ttf
+wget -P ./ https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-Medium.ttf
+wget -P ./ https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-MediumItalic.ttf
+wget -P ./ https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-Regular.ttf
+wget -P ./ https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-Thin.ttf
+wget -P ./ https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-ThinItalic.ttf
