@@ -5,9 +5,11 @@ if [[ $EUID -ne 0 ]]; then
  exit 1
 fi
 
+
 # Update and Upgrade  =========================================================
 echo "Updating and Upgrading"
 apt update && apt upgrade -y
+
 
 # Installing packages from APT  ===============================================
 echo 'Installing packages from APT'
@@ -90,12 +92,18 @@ wget -qP ~/Downloads/RobotoMono/ https://github.com/google/fonts/tree/master/apa
 wget -qP ~/Downloads/RobotoMono/ https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-ThinItalic.ttf --show-progress
 
 
-# Extracting ZIPs and putting fonts to /usr/share/fonts/  =====================
+# Extracting ZIPs and putting fonts to /usr/share/fonts/truetype/  ============
 cd ~/Downloads
-echo 'Installing downloaded fonts to /usr/share/fonts/'
+echo 'Installing downloaded fonts to /usr/share/fonts/truetype/'
 unzip -jq scp.zip ./SourceCodePro/
 unzip -jq fira.zip ./Fira/
 
 sudo mv ./SourceCodePro /usr/share/fonts/truetype/SourceCodePro/
 sudo mv ./Fira /usr/share/fonts/truetype/Fira/
 sudo mv ./RobotoMono /usr/share/fonts/truetype/RobotoMono/
+
+cd ~
+
+
+# Rebuilding font cache  ======================================================
+sudo fc-cache -v
