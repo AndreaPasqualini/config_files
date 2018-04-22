@@ -55,7 +55,7 @@ cd ~/Downloads
 
 # Installing .deb files from the internet  ====================================
 echo 'Installing Google Chrome'
-wget -P ./ https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+wget -qP ./ https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 dpkg -i ./google-chrome-stable_current_amd64.deb
 apt-get -f install
 
@@ -75,18 +75,18 @@ wget -P ./ https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
 
 # Downloading fonts found on the web  ==========================================
 echo 'Downloading additional fonts'
-wget -qO - ./ https://github.com/adobe-fonts/source-code-pro/archive/2.030R-ro/1.050R-it.zip | unzip
-wget -qO - ./ https://github.com/mozilla/Fira/archive/4.202.zip | unzip
+wget -qP - ./ https://github.com/adobe-fonts/source-code-pro/archive/2.030R-ro/1.050R-it.zip scp.zip
+wget -qP - ./ https://github.com/mozilla/Fira/archive/4.202.zip fira.zip
 
 mkdir ./RobotoMono/
 cd ./RobotoMono/
-wget -P ./ https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-Bold.ttf
-wget -P ./ https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-BoldItalic.ttf
-wget -P ./ https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-Italic.ttf
-wget -P ./ https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-Light.ttf
-wget -P ./ https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-LightItalic.ttf
-wget -P ./ https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-Medium.ttf
-wget -P ./ https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-MediumItalic.ttf
-wget -P ./ https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-Regular.ttf
-wget -P ./ https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-Thin.ttf
-wget -P ./ https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-ThinItalic.ttf
+wget -qP ./ https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-Bold.ttf
+wget -qP ./ https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-BoldItalic.ttf
+wget -qP ./ https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-Italic.ttf
+wget -qP ./ https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-Light.ttf
+wget -qP ./ https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-LightItalic.ttf
+wget -qP ./ https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-Medium.ttf
+wget -qP ./ https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-MediumItalic.ttf
+wget -qP ./ https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-Regular.ttf
+wget -qP ./ https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-Thin.ttf
+wget -qP ./ https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-ThinItalic.ttf
