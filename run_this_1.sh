@@ -49,13 +49,9 @@ p7zip-full \
 ttf-mscorefonts-installer
 
 
-# Downloading and installing stuff from the internet  =========================
-cd ~/Downloads
-
-
 # Installing .deb files from the internet  ====================================
 echo 'Installing Google Chrome'
-wget -qP ./ https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+wget -qP ./ https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb --show-progress
 dpkg -i ./google-chrome-stable_current_amd64.deb
 apt-get -f install
 
@@ -68,25 +64,38 @@ tee /etc/apt/sources.list.d/sublime-text.list
 apt update && apt install sublime-text
 
 
-# Downloading the Conda system  ================================================
+# Downloading the Conda system  ===============================================
 echo 'Downloading the (mini)Conda installer'
-wget -P ./ https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+wget -qP ~/Downloads/ https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh --show-progress
 
 
-# Downloading fonts found on the web  ==========================================
+# Downloading fonts found on the web  =========================================
 echo 'Downloading additional fonts'
-wget -qP - ./ https://github.com/adobe-fonts/source-code-pro/archive/2.030R-ro/1.050R-it.zip scp.zip
-wget -qP - ./ https://github.com/mozilla/Fira/archive/4.202.zip fira.zip
+mkdir ~/Downloads/SourceCodePro
+mkdir ~/Downloads/Fira
+mkdir ~/Downloads/RobotoMono
 
-mkdir ./RobotoMono/
-cd ./RobotoMono/
-wget -qP ./ https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-Bold.ttf
-wget -qP ./ https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-BoldItalic.ttf
-wget -qP ./ https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-Italic.ttf
-wget -qP ./ https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-Light.ttf
-wget -qP ./ https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-LightItalic.ttf
-wget -qP ./ https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-Medium.ttf
-wget -qP ./ https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-MediumItalic.ttf
-wget -qP ./ https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-Regular.ttf
-wget -qP ./ https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-Thin.ttf
-wget -qP ./ https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-ThinItalic.ttf
+wget -qP - ~/Downloads/ https://github.com/adobe-fonts/source-code-pro/archive/2.030R-ro/1.050R-it.zip scp.zip --show-progress
+wget -qP - ~/Downloads/ https://github.com/mozilla/Fira/archive/4.202.zip fira.zip --show-progress
+
+wget -qP ~/Downloads/RobotoMono/ https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-Bold.ttf --show-progress
+wget -qP ~/Downloads/RobotoMono/ https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-BoldItalic.ttf --show-progress
+wget -qP ~/Downloads/RobotoMono/ https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-Italic.ttf --show-progress
+wget -qP ~/Downloads/RobotoMono/ https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-Light.ttf --show-progress
+wget -qP ~/Downloads/RobotoMono/ https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-LightItalic.ttf --show-progress
+wget -qP ~/Downloads/RobotoMono/ https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-Medium.ttf --show-progress
+wget -qP ~/Downloads/RobotoMono/ https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-MediumItalic.ttf --show-progress
+wget -qP ~/Downloads/RobotoMono/ https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-Regular.ttf --show-progress
+wget -qP ~/Downloads/RobotoMono/ https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-Thin.ttf --show-progress
+wget -qP ~/Downloads/RobotoMono/ https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-ThinItalic.ttf --show-progress
+
+
+# Extracting ZIPs and putting fonts to /usr/share/fonts/  =====================
+cd ~/Downloads
+echo 'Installing downloaded fonts to /usr/share/fonts/'
+unzip -jq scp.zip ./SourceCodePro/
+unzip -jq fira.zip ./Fira/
+
+sudo mv ./SourceCodePro /usr/share/fonts/SourceCodePro/
+sudo mv ./Fira /usr/share/fonts/Fira/
+sudo mv ./RobotoMono /usr/share/fonts/RobotoMono/
