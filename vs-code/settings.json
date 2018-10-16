@@ -1,0 +1,32 @@
+{
+    "window.titleBarStyle": "native",
+    "window.zoomLevel": 2,
+    "editor.fontFamily": "Hack, 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "workbench.startupEditor": "none",
+    "workbench.colorTheme": "Default Light+",
+    "workbench.iconTheme": "vscode-icons",
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.fontLigatures": true,
+    "python.pythonPath": "/usr/bin/python3",
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "workbench.settings.editor": "json",
+    "explorer.sortOrder": "type",
+    "terminal.integrated.fontSize": 12,
+    "telemetry.enableTelemetry": false,
+    "matlab.matlabpath": "/usr/local/MATLAB/R2018b/bin/matlab",
+    "matlab.mlintpath": "/usr/local/MATLAB/R2018b/bin/glnxa64/mlint",
+    "matlab-formatter.indentwidth": 2,
+    "[markdown]": {
+        "editor.wordWrap": "wordWrapColumn",
+        "editor.quickSuggestions": false
+    },
+    "[latex]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true
+    },
+    "[matlab]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true
+    }
+}
