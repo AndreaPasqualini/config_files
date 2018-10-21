@@ -31,6 +31,6 @@ After execution, you should run again `Set-ExecutionPolicy` to restore the previ
 
 ### Ubuntu
 
-The script `ubuntu/run_this_1.sh` is **not** to be trusted.
+The script [`run_this_1.sh`](./ubuntu/run_this_1.sh) is **not** to be trusted.
 Currently, it might not work and I don't know if I'll ever fix it.
 At the time of writing (October 2018), my skills with Bash are so limited that I do not even have a clear understanding of what I wrote.
