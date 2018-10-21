@@ -27,3 +27,9 @@ The file fetches a bunch of executable files from the Internet that I trust (sho
 To be able to run the (unsigned) script, you should start a PowerShell with administrator privileges and run `Set-ExecutionPolicy RemoteSigned`.
 Confirm the action at the resulting prompt _only if you understand the consequences_.
 After execution, you should run again `Set-ExecutionPolicy RemoteSigned` to restore the previous (secure) settings.
+
+### Ubuntu
+
+The script `ubuntu/run_this_1.sh` is **not** to be trusted.
+Currently, it might not work and I don't know if I'll ever fix it.
+At the time of writing (October 2018), my skills with Bash are so limited that I do not even have a clear understanding of what I wrote.
