@@ -9,7 +9,7 @@ Will include my own configuration files for the following programs & co.:
 
 ## Notes on executing scripts
 
-A reponsibility waiver is in the [License file](./LICENSE).
+A responsibility waiver is in the [License file](./LICENSE).
 You run the scripts at your own risk.
 If you run my code and your machine explodes and you point the finger at me, I will laugh at you.
 Read the code before executing, unless you **blindly** trust the source (you shouldn't anyway).
