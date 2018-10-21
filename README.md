@@ -26,7 +26,8 @@ Documentation about this fact is on [a SuperUser Q/A](https://superuser.com/a/36
 The file fetches a bunch of executable files from the Internet that I trust (should you?) and places them in the Downloads folder of the local machine.
 To be able to run the (unsigned) script, you should start a PowerShell with administrator privileges and run `Set-ExecutionPolicy RemoteSigned`.
 Confirm the action at the resulting prompt _only if you understand the consequences_.
-After execution, you should run again `Set-ExecutionPolicy RemoteSigned` to restore the previous (secure) settings.
+Before you do this, read the state of `ExecutionPolicy` with `Get-ExecutionPolicy`.
+After execution, you should run again `Set-ExecutionPolicy` to restore the previous settings.
 
 ### Ubuntu
 
