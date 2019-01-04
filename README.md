@@ -7,6 +7,7 @@ Will include my own configuration files for the following programs & co.:
 * Matlab configuration (cross-platform)
 * VS Code user settings and extension install script
 
+
 ## Notes on executing scripts
 
 A responsibility waiver is in the [License file](./LICENSE).
@@ -29,8 +30,11 @@ Confirm the action at the resulting prompt _only if you understand the consequen
 Before you do this, read the state of `ExecutionPolicy` with `Get-ExecutionPolicy`.
 After execution, you should run again `Set-ExecutionPolicy` to restore the previous settings.
 
+
 ### Ubuntu
 
 The script [`run_this_1.sh`](./ubuntu/run_this_1.sh) is **not** to be trusted.
 Currently, it might not work and I don't know if I'll ever fix it.
 At the time of writing (October 2018), my skills with Bash are so limited that I do not even have a clear understanding of what I wrote.
+
+**Update:** I am currently targeting Ubuntu 18.04 LTS (HWE) with a minimal installation setup
