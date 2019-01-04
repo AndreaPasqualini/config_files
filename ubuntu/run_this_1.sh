@@ -12,21 +12,24 @@ apt update && apt upgrade -y
 
 
 # Installing packages from APT  ===============================================
-echo 'Installing packages from APT'
+echo 'Installing general utilities & tools'
+apt install -y \
+git \
+build-essential \
+
+
+echo 'Installing theming packages via APT'
 apt install -y \
 arc-theme \
 numix-theme \
-bluebird-gtk-theme \
 breeze-gtk-theme \
-greybird-gtk-theme \
-faba-icon-theme \
-faenza-icon-theme \
-moka-icon-theme \
-numix-icon-theme \
 papirus-icon-theme \
 suru-icon-theme \
-oxygen-cursor-theme \
-oxygen-cursor-theme-extra \
+qt5-style-plugins \
+qt5ct
+
+echo 'Installing fonts via APT'
+apt install -y \
 fonts-cantarell \
 fonts-dejavu \
 fonts-f500 \
@@ -37,6 +40,10 @@ fonts-quattrocento \
 fonts-roboto \
 fonts-roboto-slab \
 fonts-oxygen \
+ttf-mscorefonts-installer
+
+echo 'Installing TeXlive packages via APT'
+apt install -y \
 texlive-base \
 texlive-bibtex-extra \
 texlive-fonts-recommended \
@@ -47,8 +54,25 @@ texlive-latex-base \
 texlive-pictures \
 texlive-science \
 texlive-pstricks \
-p7zip-full \
-ttf-mscorefonts-installer
+texstudio
+
+echo 'Installing Python3 packages via APT'
+apt install -y \
+python3-numpy \
+python3-scipy \
+python3-matplotlib \
+python3-sympy \
+python3-pandas \
+python3-numba \
+python3-xlrd \
+ipython3 \
+jupyter \
+jupyter-notebook \
+spyder3
+
+
+# Fix QT5 widget theme in applications  =======================================
+echo "QT_QPA_PLATFORMTHEME=qt5ct" >> /etc/environment
 
 
 # Installing .deb files from the internet  ====================================
