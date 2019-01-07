@@ -7,6 +7,19 @@ sudo apt update && sudo apt upgrade -y
 # Install Communitheme from Snap store
 sudo snap install communitheme
 
+# Fixing unwanted snaps and installing Tweak Tool
+sudo snap remove \
+gnome-system-monitor \
+gnome-logs \
+gnome-calculator \
+gnome-characters
+
+sudo apt install -y \
+gnome-system-monitor \
+gnome-logs \
+gnome-calculator \
+gnome-characters \
+gnome-tweaks
 
 # Installing packages from APT
 sudo apt install -y \
