@@ -81,6 +81,9 @@ apt update && apt install spotify-client
 echo 'Downloading Telegram'
 wget -qP ~/Downloads https://telegram.org/dl/desktop/linux
 
+echo 'Downloading Visual Studio Code'
+wget -qP ~/Downloads https://go.microsoft.com/fwlink/?LinkID=760868
+
 
 # Downloading fonts found on the web  =========================================
 echo 'Downloading additional fonts'
