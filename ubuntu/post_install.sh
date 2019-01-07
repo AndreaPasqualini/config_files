@@ -84,6 +84,10 @@ echo "deb https://download.sublimetext.com/ apt/stable/" |
 tee /etc/apt/sources.list.d/sublime-text.list
 apt update && apt install sublime-text
 
+echo 'Installing Spotify'
+apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 931FF8E79F0876134EDDBDCCA87FF9DF48BF1C90
+echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list
+apt update && apt install spotify-client
 
 
 # Downloading fonts found on the web  =========================================
