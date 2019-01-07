@@ -84,6 +84,9 @@ wget -qP ~/Downloads https://telegram.org/dl/desktop/linux
 echo 'Downloading Visual Studio Code'
 wget -qP ~/Downloads https://go.microsoft.com/fwlink/?LinkID=760868
 
+echo 'Downloading Steam'
+wget -qP ~/Downloads https://steamcdn-a.akamaihd.net/client/installer/steam.deb
+
 
 # Downloading fonts found on the web  =========================================
 echo 'Downloading additional fonts'
