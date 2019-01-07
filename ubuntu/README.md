@@ -37,3 +37,4 @@ This file performs the following actions.
 	- Set text scaling factor to 1.2
 	- Set the desktop background to a Mint Tessa image
 	- Allow `Super` + `Right Click` to resize windows
+	- Removes traces of `Ctrl`+`Alt`+arrow to navigate across workspaces, so to avoid conflicts with similar shortcuts defined in other applications (e.g., [VS Code](https://github.com/Microsoft/vscode/issues/509))
