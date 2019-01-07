@@ -87,9 +87,11 @@ wget -q https://telegram.org/dl/desktop/linux -O ~/Downloads/telegram.tar.xz --s
 wget -q https://go.skype.com/skypeforlinux-64.deb -O ~/Downloads/skype.deb --show-progress
 wget -q https://go.microsoft.com/fwlink/?LinkID=760868 -O ~/Downloads/vscode.deb --show-progress
 wget -q https://steamcdn-a.akamaihd.net/client/installer/steam.deb -O ~/Downloads/steam.deb --show-progress
+wget -q https://github.com/shiftkey/desktop/releases/download/release-1.5.1-linux2/GitHubDesktop-linux-1.5.1-linux2.deb -O ~/Downloads/githubdesktop.deb --show-progress
 gdebi -n ~/Downloads/vscode.deb
 gdebi -n ~/Downloads/skype.deb
 gdebi -n ~/Downloads/steam.deb
+gdebi -n ~/Downloads/githubdesktop.deb
 
 
 # Downloading fonts found on the web
