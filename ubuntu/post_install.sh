@@ -122,7 +122,7 @@ sudo chown -R root:root /usr/share/fonts/truetype/RobotoMono/
 cd ~
 
 
-# Rebuilding font cache  ======================================================
+# Rebuilding font cache
 sudo fc-cache -v
 
 
