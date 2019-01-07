@@ -114,7 +114,7 @@ wget -qP ~/Downloads http://packages.linuxmint.com/pool/main/m/mint-backgrounds-
 wget -qP ~/Downloads http://packages.linuxmint.com/pool/main/m/mint-backgrounds-sylvia/mint-backgrounds-sylvia_1.2_all.deb --show-progress
 wget -qP ~/Downloads http://packages.linuxmint.com/pool/main/m/mint-backgrounds-tara/mint-backgrounds-tara_1.1_all.deb --show-progress
 wget -qP ~/Downloads http://packages.linuxmint.com/pool/main/m/mint-backgrounds-tessa/mint-backgrounds-tessa_1.1_all.deb --show-progress
-gdebi -n ~/Downloads/mint-backgrounds-*.deb
+sudo dpkg -i ~/Downloads/mint-backgrounds-*.deb
 
 
 # Downloading fonts found on the web
