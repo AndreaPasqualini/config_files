@@ -111,15 +111,12 @@ wget -qP ~/Downloads/RobotoMono/ https://github.com/google/fonts/raw/master/apac
 
 
 # Extracting ZIPs and putting fonts to /usr/share/fonts/truetype/
-cd ~/Downloads
-unzip -jq fira.zip ./Fira/
-
-sudo mv ./Fira /usr/share/fonts/truetype/Fira/
-sudo mv ./RobotoMono /usr/share/fonts/truetype/RobotoMono/
+unzip -jq ~/Downloads/fira.zip ~/Downloads/Fira/
+sudo mv ~/Downloads/Fira /usr/share/fonts/truetype/Fira/
+sudo mv ~/Downloads/RobotoMono /usr/share/fonts/truetype/RobotoMono/
 sudo chown -R root:root /usr/share/fonts/truetype/Fira/
 sudo chown -R root:root /usr/share/fonts/truetype/RobotoMono/
 
-cd ~
 
 
 # Rebuilding font cache
