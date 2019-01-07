@@ -151,11 +151,11 @@ sudo fc-cache -v
 
 # Modifying Gnome settings
 gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize-or-overview'
+gsettings set org.gnome.desktop.background show-desktop-icons false
+gsettings set org.gnome.desktop.background picture-uri 'file:///usr/share/backgrouds/linuxmint-tessa/bfantinatti_small_leaves.jpg'
+gsettings set org.gnome.desktop.interface text-scaling-factor 1.2
 gsettings set org.gnome.desktop.wm.preferences button-layout 'close,minimize,maximize:'
 gsettings set org.gnome.desktop.wm.preferences resize-with-right-button true
-gsettings set org.gnome.desktop.background show-desktop-icons false
-gsettings set org.gnome.desktop.interface text-scaling-factor 1.2
-gsettings set org.gnome.desktop.background picture-uri 'file:///usr/share/backgrouds/linuxmint-tessa/bfantinatti_small_leaves.jpg'
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left []
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right []
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-up ['<Super>Page_Up']
