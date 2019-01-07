@@ -84,13 +84,6 @@ echo "deb https://download.sublimetext.com/ apt/stable/" |
 tee /etc/apt/sources.list.d/sublime-text.list
 apt update && apt install sublime-text
 
-echo 'Downloading Mendeley bibliography manager'
-wget -qO ./ https://www.mendeley.com/repositories/ubuntu/stable/amd64/mendeleydesktop-latest
-
-
-# Downloading the Conda system  ===============================================
-echo 'Downloading the (mini)Conda installer'
-wget -qP ~/Downloads/ https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh --show-progress
 
 
 # Downloading fonts found on the web  =========================================
