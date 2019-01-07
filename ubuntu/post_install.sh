@@ -71,19 +71,6 @@ echo "export QT_QPA_PLATFORMTHEME=qt5ct" >> /etc/environment
 
 
 # Installing .deb files from the internet  ====================================
-echo 'Downloading Google Chrome'
-wget -qP ./ https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb --show-progress
-# dpkg -i ./google-chrome-stable_current_amd64.deb
-# apt-get -f install
-
-echo 'Installing Sublime Text 3'
-wget -qO ./ https://download.sublimetext.com/sublimehq-pub.gpg |
-apt-key add -
-apt install apt-transport-https
-echo "deb https://download.sublimetext.com/ apt/stable/" |
-tee /etc/apt/sources.list.d/sublime-text.list
-apt update && apt install sublime-text
-
 echo 'Installing Spotify'
 apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 931FF8E79F0876134EDDBDCCA87FF9DF48BF1C90
 echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list
