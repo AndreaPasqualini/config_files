@@ -1,11 +1,5 @@
 #!/bin/bash
 
-if [[ $EUID -ne 0 ]]; then
- echo "This script must be run as root"
- exit 1
-fi
-
-
 # Update and Upgrade  =========================================================
 echo "Updating and Upgrading"
 sudo apt update && sudo apt upgrade -y
