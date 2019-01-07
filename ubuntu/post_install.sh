@@ -15,7 +15,9 @@ apt update && apt upgrade -y
 echo 'Installing general utilities & tools'
 apt install -y \
 git \
-build-essential
+build-essential \
+gdebi \
+synaptic
 
 
 echo 'Installing theming packages via APT'
