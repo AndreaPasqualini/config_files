@@ -90,12 +90,14 @@ sudo apt update && sudo apt install -y spotify-client
 
 # Downloading DEB files
 wget -q https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2018.11.28_amd64.deb -O ~/Downloads/dropbox.deb --show-progress
+wget -q https://global.download.synology.com/download/Tools/CloudStationDrive/4.2.8-4421/Ubuntu/Installer/x86_64/synology-cloud-station-drive-4421.x86_64.deb -O ~/Downloads/synologycloud.deb --show-progress
 wget -q https://telegram.org/dl/desktop/linux -O ~/Downloads/telegram.tar.xz --show-progress
 wget -q https://go.skype.com/skypeforlinux-64.deb -O ~/Downloads/skype.deb --show-progress
 wget -q https://go.microsoft.com/fwlink/?LinkID=760868 -O ~/Downloads/vscode.deb --show-progress
 wget -q https://steamcdn-a.akamaihd.net/client/installer/steam.deb -O ~/Downloads/steam.deb --show-progress
 wget -q https://github.com/shiftkey/desktop/releases/download/release-1.5.1-linux2/GitHubDesktop-linux-1.5.1-linux2.deb -O ~/Downloads/githubdesktop.deb --show-progress
 gdebi -n ~/Downloads/dropbox.deb
+gdebi -n ~/Downloads/synologycloud.deb
 gdebi -n ~/Downloads/vscode.deb
 gdebi -n ~/Downloads/skype.deb
 gdebi -n ~/Downloads/steam.deb
