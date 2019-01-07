@@ -128,3 +128,8 @@ cd ~
 
 # Rebuilding font cache  ======================================================
 sudo fc-cache -v
+
+
+
+# Modifying Gnome settings
+gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize-or-overview'
