@@ -67,7 +67,7 @@ spyder3
 
 
 # Fix QT5 widget theme in applications  =======================================
-echo "QT_QPA_PLATFORMTHEME=qt5ct" >> /etc/environment
+echo "export QT_QPA_PLATFORMTHEME=qt5ct" >> /etc/environment
 
 
 # Installing .deb files from the internet  ====================================
