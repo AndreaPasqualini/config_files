@@ -76,6 +76,9 @@ apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 931FF8E79F0876
 echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list
 apt update && apt install spotify-client
 
+echo 'Downloading Telegram'
+wget -qP ~/Downloads https://telegram.org/dl/desktop/linux
+
 
 # Downloading fonts found on the web  =========================================
 echo 'Downloading additional fonts'
