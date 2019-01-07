@@ -82,19 +82,18 @@ echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sourc
 sudo apt update && sudo apt install -y spotify-client
 
 
-wget -qP ~/Downloads https://telegram.org/dl/desktop/linux --show-progress
-
-wget -qP ~/Downloads https://go.microsoft.com/fwlink/?LinkID=760868 --show-progress
 # Downloading DEB files
-
-wget -qP ~/Downloads https://steamcdn-a.akamaihd.net/client/installer/steam.deb --show-progress
+wget -q https://telegram.org/dl/desktop/linux -O ~/Downloads/telegram.tar.xz --show-progress
+wget -q https://go.skype.com/skypeforlinux-64.deb -O ~/Downloads/skype.deb --show-progress
+wget -q https://go.microsoft.com/fwlink/?LinkID=760868 -O ~/Downloads/vscode.deb --show-progress
+wget -q https://steamcdn-a.akamaihd.net/client/installer/steam.deb -O ~/Downloads/steam.deb --show-progress
 
 
 # Downloading fonts found on the web
 mkdir ~/Downloads/Fira
 mkdir ~/Downloads/RobotoMono
 
-wget -qP - ~/Downloads/ https://github.com/mozilla/Fira/archive/4.202.zip fira.zip --show-progress
+wget -q https://github.com/mozilla/Fira/archive/4.202.zip -O ~/Downloads/fira.zip --show-progress
 
 wget -qP ~/Downloads/RobotoMono/ https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-Bold.ttf --show-progress
 wget -qP ~/Downloads/RobotoMono/ https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-BoldItalic.ttf --show-progress
