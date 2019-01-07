@@ -116,6 +116,8 @@ unzip -jq fira.zip ./Fira/
 
 sudo mv ./Fira /usr/share/fonts/truetype/Fira/
 sudo mv ./RobotoMono /usr/share/fonts/truetype/RobotoMono/
+sudo chown -R root:root /usr/share/fonts/truetype/Fira/
+sudo chown -R root:root /usr/share/fonts/truetype/RobotoMono/
 
 cd ~
 
