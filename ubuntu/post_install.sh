@@ -105,7 +105,8 @@ gdebi -n ~/Downloads/vscode.deb
 gdebi -n ~/Downloads/skype.deb
 gdebi -n ~/Downloads/steam.deb
 gdebi -n ~/Downloads/githubdesktop.deb
-
+tar xf ~/Downloads/telegram.tar.xz -C ~/Downloads
+~/Downloads/Telegram/Telegram
 
 # Downloading Linux Mint backgrounds
 wget -qP ~/Downloads http://packages.linuxmint.com/pool/main/m/mint-backgrounds-maya/mint-backgrounds-maya_1.5_all.deb --show-progress
