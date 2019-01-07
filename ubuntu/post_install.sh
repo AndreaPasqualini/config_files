@@ -24,6 +24,7 @@ gnome-sudoku \
 gnome-mines \
 gnome-calendar \
 gnome-todo \
+chrome-gnome-shell \
 gnome-tweaks
 
 
