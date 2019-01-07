@@ -1,14 +1,14 @@
 #!/bin/bash
 
-# Update and Upgrade  =========================================================
+# Update and Upgrade
 sudo apt update && sudo apt upgrade -y
 
 
-# Install Communitheme from Snap store  =======================================
+# Install Communitheme from Snap store
 sudo snap install communitheme
 
 
-# Installing packages from APT  ===============================================
+# Installing packages from APT
 sudo apt install -y \
 git \
 build-essential \
@@ -59,25 +59,25 @@ jupyter-notebook \
 spyder3
 
 
-# Fix QT5 widget theme in applications  =======================================
+# Fix QT5 widget theme in applications
 echo "export QT_QPA_PLATFORMTHEME=qt5ct" | sudo tee -a /etc/environment
 
 
-# Installing .deb files from the internet  ====================================
+# Installing Spotify
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 931FF8E79F0876134EDDBDCCA87FF9DF48BF1C90
 echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list
 sudo apt update && sudo apt install spotify-client
 
 
-# Downloading DEB files  ======================================================
 wget -qP ~/Downloads https://telegram.org/dl/desktop/linux --show-progress
 
 wget -qP ~/Downloads https://go.microsoft.com/fwlink/?LinkID=760868 --show-progress
+# Downloading DEB files
 
 wget -qP ~/Downloads https://steamcdn-a.akamaihd.net/client/installer/steam.deb --show-progress
 
 
-# Downloading fonts found on the web  =========================================
+# Downloading fonts found on the web
 mkdir ~/Downloads/Fira
 mkdir ~/Downloads/RobotoMono
 
@@ -95,7 +95,7 @@ wget -qP ~/Downloads/RobotoMono/ https://github.com/google/fonts/tree/master/apa
 wget -qP ~/Downloads/RobotoMono/ https://github.com/google/fonts/tree/master/apache/robotomono/RobotoMono-ThinItalic.ttf --show-progress
 
 
-# Extracting ZIPs and putting fonts to /usr/share/fonts/truetype/  ============
+# Extracting ZIPs and putting fonts to /usr/share/fonts/truetype/
 cd ~/Downloads
 unzip -jq fira.zip ./Fira/
 
