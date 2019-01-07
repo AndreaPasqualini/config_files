@@ -18,7 +18,7 @@ This file performs the following actions.
 	- USB creator (because it is absent in minimal installation)
 	- Transmission (because it is absent in minimal installation)
 	- Synaptics and `gdebi`
-	- [Spotify](https://www.spotify.com/it/download/linux/)
+	- [Spotify](https://www.spotify.com/download/linux/)
 	- GNOME apps: calendar, mines, sudoku, todo
 	- Some fonts (e.g., Fira Code, Noto, Roboto, Hack)
 	- Some theming assets (e.g., Papirus icon theme, QT5 configurator)
