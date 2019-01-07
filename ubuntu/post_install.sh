@@ -131,17 +131,11 @@ wget -qP ~/Downloads/RobotoMono/ https://github.com/google/fonts/raw/master/apac
 wget -qP ~/Downloads/RobotoMono/ https://github.com/google/fonts/raw/master/apache/robotomono/RobotoMono-Regular.ttf --show-progress
 wget -qP ~/Downloads/RobotoMono/ https://github.com/google/fonts/raw/master/apache/robotomono/RobotoMono-Thin.ttf --show-progress
 wget -qP ~/Downloads/RobotoMono/ https://github.com/google/fonts/raw/master/apache/robotomono/RobotoMono-ThinItalic.ttf --show-progress
-
-
-# Extracting ZIPs and putting fonts to /usr/share/fonts/truetype/
 unzip -jq ~/Downloads/fira.zip ~/Downloads/Fira/
 sudo mv ~/Downloads/Fira /usr/share/fonts/truetype/Fira/
 sudo mv ~/Downloads/RobotoMono /usr/share/fonts/truetype/RobotoMono/
 sudo chown -R root:root /usr/share/fonts/truetype/Fira/
 sudo chown -R root:root /usr/share/fonts/truetype/RobotoMono/
-
-
-# Rebuilding font cache
 sudo fc-cache -v
 
 
