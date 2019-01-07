@@ -15,7 +15,7 @@ apt update && apt upgrade -y
 echo 'Installing general utilities & tools'
 apt install -y \
 git \
-build-essential \
+build-essential
 
 
 echo 'Installing theming packages via APT'
