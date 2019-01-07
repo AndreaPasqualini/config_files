@@ -27,6 +27,7 @@ This file performs the following actions.
 	- [Skype](https://www.skype.com/en/get-skype/)
 	- [GitHub Desktop](https://desktop.github.com/) (from Linux fork [here](https://github.com/shiftkey/desktop/))
 	- [Steam](https://store.steampowered.com/about/)
+	- [Linux Mint backgrounds](http://packages.linuxmint.com/list.php?release=Tessa#main)
 	- Fira Sans font family
 	- Roboto Mono font family
 - Sets `gsettings` options to my liking
@@ -34,4 +35,5 @@ This file performs the following actions.
 	- Window controls on the left
 	- Disable desktop icons
 	- Set text scaling factor to 1.2
+	- Set the desktop background to a Mint Tessa image
 	- Allow `Super` + `Right Click` to resize windows
