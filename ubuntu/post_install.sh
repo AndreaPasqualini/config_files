@@ -151,3 +151,4 @@ gsettings set org.gnome.desktop.wm.preferences button-layout 'close,minimize,max
 gsettings set org.gnome.desktop.wm.preferences resize-with-right-button true
 gsettings set org.gnome.desktop.background show-desktop-icons false
 gsettings set org.gnome.desktop.interface text-scaling-factor 1.2
+gsettings set org.gnome.desktop.background picture-uri 'file:///usr/share/backgrouds/linuxmint-tessa/bfantinatti_small_leaves.jpg'
