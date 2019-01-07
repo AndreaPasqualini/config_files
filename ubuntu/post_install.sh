@@ -78,6 +78,8 @@ jupyter \
 jupyter-notebook \
 spyder3
 
+sudo apt install -y npm
+
 
 # Fix QT5 widget theme in applications
 echo "export QT_QPA_PLATFORMTHEME=qt5ct" | sudo tee -a /etc/environment
