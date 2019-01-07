@@ -19,6 +19,10 @@ gnome-system-monitor \
 gnome-logs \
 gnome-calculator \
 gnome-characters \
+gnome-sudoku \
+gnome-mines \
+gnome-calendar \
+gnome-todo \
 gnome-tweaks
 
 # Installing packages from APT
