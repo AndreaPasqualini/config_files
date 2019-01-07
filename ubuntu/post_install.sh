@@ -7,6 +7,7 @@ sudo apt update && sudo apt upgrade -y
 # Install Communitheme from Snap store
 sudo snap install communitheme
 
+
 # Fixing unwanted snaps and installing Tweak Tool
 sudo snap remove \
 gnome-system-monitor \
@@ -24,6 +25,7 @@ gnome-mines \
 gnome-calendar \
 gnome-todo \
 gnome-tweaks
+
 
 # Installing packages from APT
 sudo apt install -y \
