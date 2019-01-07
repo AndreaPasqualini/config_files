@@ -20,26 +20,21 @@ build-essential
 
 echo 'Installing theming packages via APT'
 apt install -y \
-arc-theme \
-numix-theme \
 breeze-gtk-theme \
+materia-gtk-theme \
 papirus-icon-theme \
-suru-icon-theme \
 qt5-style-plugins \
 qt5ct
 
 echo 'Installing fonts via APT'
 apt install -y \
-fonts-cantarell \
-fonts-dejavu \
-fonts-f500 \
 fonts-firacode \
-fonts-noto \
 fonts-noto-mono \
-fonts-quattrocento \
+fonts-hack \
+fonts-dejavu \
+fonts-noto \
 fonts-roboto \
 fonts-roboto-slab \
-fonts-oxygen \
 ttf-mscorefonts-installer
 
 echo 'Installing TeXlive packages via APT'
