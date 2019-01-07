@@ -164,3 +164,7 @@ gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-left []
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-right []
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-up ['<Super><Shift>Page_Up']
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-down ['<Super><Shift>Page_Down']
+
+
+# Remove all downloaded files upon successful completion of the operations above
+sudo rm ~/Downloads/* -rf
