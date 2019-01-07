@@ -25,7 +25,10 @@ gnome-mines \
 gnome-calendar \
 gnome-todo \
 chrome-gnome-shell \
-gnome-tweaks
+gnome-tweaks \
+gnome-shell-extension-mediaplayer \
+gnome-shell-extension-system-monitor \
+gnome-shell-extension-weather
 
 
 # Installing packages from APT
