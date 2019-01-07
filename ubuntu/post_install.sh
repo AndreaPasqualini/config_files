@@ -114,7 +114,6 @@ wget -qP ~/Downloads/RobotoMono/ https://github.com/google/fonts/tree/master/apa
 cd ~/Downloads
 unzip -jq fira.zip ./Fira/
 
-sudo mv ./SourceCodePro /usr/share/fonts/truetype/SourceCodePro/
 sudo mv ./Fira /usr/share/fonts/truetype/Fira/
 sudo mv ./RobotoMono /usr/share/fonts/truetype/RobotoMono/
 
