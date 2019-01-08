@@ -18,6 +18,7 @@ gnome-characters
 sudo apt install -y \
 baobab \
 vlc \
+simple-scan \
 gnome-system-monitor \
 gnome-logs \
 gnome-calculator \
@@ -38,7 +39,8 @@ sudo apt install -y \
 git \
 build-essential \
 gdebi \
-synaptic
+synaptic \
+usb-creator-gtk
 
 sudo apt install -y \
 breeze-gtk-theme \
