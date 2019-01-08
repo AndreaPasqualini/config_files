@@ -182,6 +182,16 @@ gsettings set org.gnome.nautilus.preferences default-visible-columns "['name', '
 # Modifying Terminal settings
 gsettings set org.gnome.terminal.legacy theme-variant "'dark'"
 
+# Modifying Gedit settings
+gsettings set org.gnome.gedit.preferences.editor bracket-matching true
+gsettings set org.gnome.gedit.preferences.editor display-line-numbers true
+gsettings set org.gnome.gedit.preferences.editor display-overview-map true
+gsettings set org.gnome.gedit.preferences.editor display-right-margin true
+gsettings set org.gnome.gedit.preferences.editor highlight-current-line true
+gsettings set org.gnome.gedit.preferences.editor insert-spaces true
+gsettings set org.gnome.gedit.preferences.editor scheme "'tango'"
+gsettings set org.gnome.gedit.preferences.editor tabs-size 4
+gsettings set org.gnome.gedit.preferences.editor wrap-last-split-mode "'word'"
 
 
 # Remove all downloaded files upon successful completion of the operations above
