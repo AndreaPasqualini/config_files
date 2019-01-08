@@ -113,6 +113,7 @@ sudo gdebi -n ~/Downloads/githubdesktop.deb
 tar xf ~/Downloads/telegram.tar.xz -C ~/Downloads
 ~/Downloads/Telegram/Telegram
 
+
 # Downloading Linux Mint backgrounds
 wget -qP ~/Downloads http://packages.linuxmint.com/pool/main/m/mint-backgrounds-maya/mint-backgrounds-maya_1.5_all.deb --show-progress
 wget -qP ~/Downloads http://packages.linuxmint.com/pool/main/m/mint-backgrounds-nadia/mint-backgrounds-nadia_1.4_all.deb --show-progress
@@ -173,14 +174,17 @@ gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-up "['<Super><S
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-down "['<Super><Shift>Page_Down']"
 gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "'<Super>T'"
 
+
 # Modfying Nautilus settings
 gsettings set org.gnome.nautilus.preferences default-folder-viewer "'list-view'"
 gsettings set org.gnome.nautilus.preferences search-view "'list-view'"
 gsettings set org.gnome.nautilus.preferences search-filter-time-type "'last_modified'"
 gsettings set org.gnome.nautilus.preferences default-visible-columns "['name', 'size', 'type', 'date_modified']"
 
+
 # Modifying Terminal settings
 gsettings set org.gnome.terminal.legacy theme-variant "'dark'"
+
 
 # Modifying Gedit settings
 gsettings set org.gnome.gedit.preferences.editor bracket-matching true
