@@ -179,6 +179,9 @@ gsettings set org.gnome.nautilus.preferences search-view "'list-view'"
 gsettings set org.gnome.nautilus.preferences search-filter-time-type "'last_modified'"
 gsettings set org.gnome.nautilus.preferences default-visible-columns "['name', 'size', 'type', 'date_modified']"
 
+# Modifying Terminal settings
+gsettings set org.gnome.terminal.legacy theme-variant "'dark'"
+
 
 
 # Remove all downloaded files upon successful completion of the operations above
