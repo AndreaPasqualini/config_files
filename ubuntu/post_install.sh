@@ -102,12 +102,12 @@ wget -q https://go.skype.com/skypeforlinux-64.deb -O ~/Downloads/skype.deb --sho
 wget -q https://go.microsoft.com/fwlink/?LinkID=760868 -O ~/Downloads/vscode.deb --show-progress
 wget -q https://steamcdn-a.akamaihd.net/client/installer/steam.deb -O ~/Downloads/steam.deb --show-progress
 wget -q https://github.com/shiftkey/desktop/releases/download/release-1.5.1-linux2/GitHubDesktop-linux-1.5.1-linux2.deb -O ~/Downloads/githubdesktop.deb --show-progress
-gdebi -n ~/Downloads/dropbox.deb
-gdebi -n ~/Downloads/synologycloud.deb
-gdebi -n ~/Downloads/vscode.deb
-gdebi -n ~/Downloads/skype.deb
-gdebi -n ~/Downloads/steam.deb
-gdebi -n ~/Downloads/githubdesktop.deb
+sudo gdebi -n ~/Downloads/dropbox.deb
+sudo gdebi -n ~/Downloads/synologycloud.deb
+sudo gdebi -n ~/Downloads/vscode.deb
+sudo gdebi -n ~/Downloads/skype.deb
+sudo gdebi -n ~/Downloads/steam.deb
+sudo gdebi -n ~/Downloads/githubdesktop.deb
 tar xf ~/Downloads/telegram.tar.xz -C ~/Downloads
 ~/Downloads/Telegram/Telegram
 
