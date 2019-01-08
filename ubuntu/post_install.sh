@@ -179,3 +179,4 @@ gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-down "['<Super>
 
 # Remove all downloaded files upon successful completion of the operations above
 sudo rm ~/Downloads/* -rf
+sudo shutdown -r now
