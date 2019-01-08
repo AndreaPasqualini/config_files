@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Installing the theme
-sudo apt install -y materia-gtk-theme fonts-roboto fonts-firacode
+sudo apt install -y materia-gtk-theme papirus-icon-theme fonts-roboto
 
 # Setting the theme
 gsettings set org.gnome.desktop.interface gtk-theme 'Materia-light-compact'
