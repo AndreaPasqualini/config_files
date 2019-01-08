@@ -154,7 +154,7 @@ sudo chown -R root:root /usr/share/fonts/truetype/RobotoMono/
 sudo fc-cache -v
 
 
-# Modifying Gnome settings
+# Modifying general Gnome settings
 gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize-or-overview'
 gsettings set org.gnome.desktop.background show-desktop-icons false
 gsettings set org.gnome.desktop.background picture-uri 'file:///usr/share/backgrounds/linuxmint-tessa/bfantinatti_small_leaves.jpg'
