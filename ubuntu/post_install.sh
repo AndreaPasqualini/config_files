@@ -173,6 +173,12 @@ gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-up "['<Super><S
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-down "['<Super><Shift>Page_Down']"
 gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "'<Super>T'"
 
+# Modfying Nautilus settings
+gsettings set org.gnome.nautilus.preferences default-folder-viewer "'list-view'"
+gsettings set org.gnome.nautilus.preferences search-view "'list-view'"
+gsettings set org.gnome.nautilus.preferences search-filter-time-type "'last_modified'"
+gsettings set org.gnome.nautilus.preferences default-visible-columns "['name', 'size', 'type', 'date_modified']"
+
 
 
 # Remove all downloaded files upon successful completion of the operations above
