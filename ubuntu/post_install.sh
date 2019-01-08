@@ -155,7 +155,7 @@ sudo fc-cache -v
 # Modifying Gnome settings
 gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize-or-overview'
 gsettings set org.gnome.desktop.background show-desktop-icons false
-gsettings set org.gnome.desktop.background picture-uri 'file:///usr/share/backgrouds/linuxmint-tessa/bfantinatti_small_leaves.jpg'
+gsettings set org.gnome.desktop.background picture-uri 'file:///usr/share/backgrounds/linuxmint-tessa/bfantinatti_small_leaves.jpg'
 gsettings set org.gnome.desktop.interface text-scaling-factor 1.2
 gsettings set org.gnome.desktop.interface clock-show-date true
 gsettings set org.gnome.desktop.interface cursor-size 32
