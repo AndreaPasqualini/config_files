@@ -44,9 +44,6 @@ synaptic \
 usb-creator-gtk
 
 sudo apt install -y \
-breeze-gtk-theme \
-materia-gtk-theme \
-papirus-icon-theme \
 qt5-style-plugins \
 qt5ct
 
@@ -164,12 +161,6 @@ gsettings set org.gnome.desktop.background picture-uri 'file:///usr/share/backgr
 gsettings set org.gnome.desktop.interface text-scaling-factor 1.2
 gsettings set org.gnome.desktop.interface clock-show-date true
 gsettings set org.gnome.desktop.interface cursor-size 32
-gsettings set org.gnome.desktop.interface gtk-theme 'Materia-light-compact'
-gsettings set org.gnome.desktop.interface icon-theme 'Papirus'
-gsettings set org.gnome.desktop.interface font-name 'Roboto 11'
-gsettings set org.gnome.desktop.interface monospace-font-name 'Fira Code 11'
-gsettings set org.gnome.desktop.interface document-font-name 'Noto Sans 11'
-gsettings set org.gnome.desktop.wm.preferences titlebar-font 'Roboto Bold 11'
 gsettings set org.gnome.desktop.wm.preferences button-layout 'close,minimize,maximize:'
 gsettings set org.gnome.desktop.wm.preferences resize-with-right-button true
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left []
