@@ -46,3 +46,14 @@ Things left to be done manually (or to be added to the script):
 - Set shell theme after enabling the User Themes extension
 - Change the lock screen shortcut from `Ctrl`+`Alt`+`L` to `Super`+`L`
 - Logout after `gnome-extensions-*` are installed from APT, so to enable them at next login
+
+
+## Theme installers
+
+These files download, compile and install the following themes:
+- [Materia theme](https://github.com/nana-4/materia-theme);
+- [Tetra theme](https://github.com/hrdwrrsk/tetra-gtk-theme);
+- [Vimix theme](https://github.com/vinceliuice/vimix-gtk-themes).
+They try to install the GTK themes, the Shell themes and the icon themes, when these are available.
+Setting the Shell theme is left to the user's manual operation.
+The scripts finally perform a clean-up of files that will not be necessary after the operations.
