@@ -6,6 +6,7 @@ Will include my own configuration files for the following programs & co.:
 - Linux file templates to be typically put in `~/Templates/`
 - Matlab configuration (cross-platform)
 - VS Code user settings and extension install script
+- Sublime Text 3 settings
 
 
 ## Notes on executing scripts
