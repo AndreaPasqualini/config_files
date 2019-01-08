@@ -18,7 +18,7 @@ To see how a minimal installation differs from a complete one, see [this answer 
 	- USB creator (because it is absent in minimal installation)
 	- Transmission (because it is absent in minimal installation)
 	- [Spotify](https://www.spotify.com/download/linux/)
-	- GNOME apps: calendar, mines, sudoku, todo
+	- GNOME apps: calendar, mines, sudoku, todo, weather
 	- Some fonts (e.g., Fira Code, Noto, Roboto, Hack)
 	- Some theming assets (e.g., Papirus icon theme, QT5 configurator)
 - Download things with `wget` (and installs them system-wide):
