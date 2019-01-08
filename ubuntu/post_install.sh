@@ -27,6 +27,7 @@ gnome-sudoku \
 gnome-mines \
 gnome-calendar \
 gnome-todo \
+gnome-weather \
 chrome-gnome-shell \
 gnome-tweaks \
 gnome-shell-extension-mediaplayer \
