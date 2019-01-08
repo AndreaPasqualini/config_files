@@ -42,6 +42,6 @@ This file performs the following actions.
 
 Things left to be done manually (or to be added to the script):
 
-- Logout after communitheme is installed, login with snap active
+- Logout after `communitheme` is installed, login with snap active
 - Change the lock screen shortcut from `Ctrl`+`Alt`+`L` to `Super`+`L`
 - Logout after `gnome-extensions-*` are installed from APT, so to enable them at next login
