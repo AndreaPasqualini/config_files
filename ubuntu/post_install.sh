@@ -16,6 +16,7 @@ gnome-calculator \
 gnome-characters
 
 sudo apt install -y \
+baobab \
 gnome-system-monitor \
 gnome-logs \
 gnome-calculator \
