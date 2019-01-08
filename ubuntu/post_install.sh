@@ -171,6 +171,8 @@ gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-left []
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-right []
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-up "['<Super><Shift>Page_Up']"
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-down "['<Super><Shift>Page_Down']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "'<Super>T'"
+
 
 
 # Remove all downloaded files upon successful completion of the operations above
