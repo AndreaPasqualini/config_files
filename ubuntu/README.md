@@ -6,7 +6,7 @@ To see how a minimal installation differs from a complete one, see [this answer 
 
 ## Post-install configurator
 
-This file performs the following actions.
+[This file](./post_install.sh) performs the following actions.
 
 - Download and install packages with `snap`:
 	- [`communitheme`](https://snapcraft.io/communitheme)
