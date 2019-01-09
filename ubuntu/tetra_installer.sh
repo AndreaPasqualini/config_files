@@ -15,9 +15,9 @@ rm -rf ./tetra-gtk-theme
 sudo sed -i.bak s/'  height: 28px'/'  height: 40px'/g /usr/share/themes/Tetra/gnome-shell/gnome-shell.css
 sudo sed -i.bak s/'  height: 28px'/'  height: 40px'/g /usr/share/themes/Tetra-dark/gnome-shell/gnome-shell.css
 sudo sed -i.bak s/'  height: 28px'/'  height: 40px'/g /usr/share/themes/Tetra-light/gnome-shell/gnome-shell.css
-sudo sed -i.bak s/'  font-size: 9pt'/'  font-size: 11pt' /usr/share/themes/Tetra/gnome-shell/gnome-shell.css
-sudo sed -i.bak s/'  font-size: 9pt'/'  font-size: 11pt' /usr/share/themes/Tetra-dark/gnome-shell/gnome-shell.css
-sudo sed -i.bak s/'  font-size: 9pt'/'  font-size: 11pt' /usr/share/themes/Tetra-light/gnome-shell/gnome-shell.css
+sudo sed -i.bak s/'  font-size: 9pt'/'  font-size: 11pt'/ /usr/share/themes/Tetra/gnome-shell/gnome-shell.css
+sudo sed -i.bak s/'  font-size: 9pt'/'  font-size: 11pt'/ /usr/share/themes/Tetra-dark/gnome-shell/gnome-shell.css
+sudo sed -i.bak s/'  font-size: 9pt'/'  font-size: 11pt'/ /usr/share/themes/Tetra-light/gnome-shell/gnome-shell.css
 
 gsettings set org.gnome.desktop.interface gtk-theme 'Tetra'
 gsettings set org.gnome.desktop.interface icon-theme 'ePapirus'
