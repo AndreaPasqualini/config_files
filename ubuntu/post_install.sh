@@ -136,6 +136,7 @@ sudo dpkg -i ~/Downloads/mint-backgrounds-*.deb
 # Downloading fonts found on the web
 mkdir ~/Downloads/Fira
 mkdir ~/Downloads/RobotoMono
+git clone https://github.com/apsql/slate-for-oneplus.git
 wget -q https://github.com/mozilla/Fira/archive/4.202.zip -O ~/Downloads/fira.zip --show-progress
 wget -qP ~/Downloads/RobotoMono/ https://github.com/google/fonts/raw/master/apache/robotomono/RobotoMono-Bold.ttf --show-progress
 wget -qP ~/Downloads/RobotoMono/ https://github.com/google/fonts/raw/master/apache/robotomono/RobotoMono-BoldItalic.ttf --show-progress
@@ -150,8 +151,10 @@ wget -qP ~/Downloads/RobotoMono/ https://github.com/google/fonts/raw/master/apac
 unzip -jq ~/Downloads/fira.zip ~/Downloads/Fira/
 sudo mv ~/Downloads/Fira/* /usr/share/fonts/truetype/Fira/
 sudo mv ~/Downloads/RobotoMono/* /usr/share/fonts/truetype/RobotoMono/
+sudo mv ~/Downloads/slate-for-oneplus/slate/* /usr/share/fonts/truetype/Slate/
 sudo chown -R root:root /usr/share/fonts/truetype/Fira/
 sudo chown -R root:root /usr/share/fonts/truetype/RobotoMono/
+sudo chown -R root:root /usr/share/fonts/truetype/Slate
 sudo fc-cache -v
 
 
