@@ -12,6 +12,7 @@
     "explorer.sortOrder": "type",
     "terminal.integrated.fontSize": 12,
     "telemetry.enableTelemetry": false,
+    "files.associations": {"*.m": "matlab"},
     "matlab.matlabpath": "C:/Program Files/MATLAB/R2018b/bin/matlab.exe",
     "matlab.mlintpath": "/C:/Program Files/MATLAB/R2018b/bin/win64/mlint",
     "matlab-formatter.indentwidth": 2,
