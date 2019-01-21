@@ -1,7 +1,7 @@
 {
-    "editor.fontFamily": "Hack, 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
     "window.titleBarStyle": "custom",
     "window.zoomLevel": 0,
+    "editor.fontFamily": "Fira Code, Hack, 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
     "workbench.startupEditor": "none",
     "workbench.colorTheme": "Default Light+",
     "workbench.iconTheme": "vscode-icons",
