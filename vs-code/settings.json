@@ -3,7 +3,6 @@
     "window.zoomLevel": 0,
     "editor.fontFamily": "Fira Code, Hack, 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
     "workbench.startupEditor": "none",
-    "workbench.colorTheme": "Default Light+",
     "workbench.iconTheme": "vscode-icons",
     "editor.wordWrap": "wordWrapColumn",
     "editor.fontLigatures": true,
@@ -27,5 +26,6 @@
     "[matlab]": {
         "editor.tabSize": 2,
         "editor.insertSpaces": true
-    }
+    },
+    "workbench.colorTheme": "Ayu Mirage Bordered"
 }
