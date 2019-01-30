@@ -57,3 +57,17 @@ These files download, compile and install the following themes:
 They try to install the GTK themes, the Shell themes and the icon themes, when these are available.
 Setting the Shell theme is left to the user's manual operation.
 The scripts finally perform a clean-up of files that will not be necessary after the operations.
+
+
+## KDE Neon User Edition post-install
+
+I'm writing a post-install script for [KDE Neon](https://neon.kde.org/).
+The file [`post_install_kdeneon.sh`](./post_install_kdeneon.sh) is a fork of [`post_install.sh`](./[post_install.sh) that accounts for differences between Gnome and KDE.
+The intended goals are
+- Remove the circle around the close button on windows
+- Remove the gradient on titlebars on windows
+- Set the Breeze Light color scheme system-wide
+- Modify the default terminal profile
+- Insert templates in Dolphin
+- Set up the main panel and a [`latte-dock`](https://github.com/KDE/latte-dock) instance in a macOS-like fashion
+- Other things I'm not thinking about right now
