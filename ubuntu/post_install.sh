@@ -44,8 +44,7 @@ synaptic \
 usb-creator-gtk
 
 sudo apt install -y \
-qt5-style-plugins \
-qt5ct
+qt5-style-plugins
 
 sudo apt install -y \
 fonts-firacode \
@@ -87,7 +86,7 @@ sudo apt install -y npm
 
 
 # Fix QT5 widget theme in applications
-echo "export QT_QPA_PLATFORMTHEME=qt5ct" | sudo tee -a /etc/environment
+echo "export QT_QPA_PLATFORMTHEME=gtk2" | sudo tee -a /etc/environment
 
 
 # Installing Spotify
