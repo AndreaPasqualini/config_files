@@ -48,8 +48,7 @@ fonts-hack \
 fonts-dejavu \
 fonts-noto \
 fonts-roboto \
-fonts-roboto-slab \
-ttf-mscorefonts-installer
+fonts-roboto-slab
 
 sudo apt install -y \
 texlive-base \
