@@ -199,4 +199,3 @@ gsettings set org.gnome.gedit.preferences.editor wrap-last-split-mode "'word'"
 # Remove all downloaded files upon successful completion of the operations above
 sudo rm ~/Downloads/* -rf
 sudo shutdown -r now
-
