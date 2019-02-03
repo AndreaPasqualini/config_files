@@ -92,6 +92,8 @@ sudo apt update && sudo apt install -y spotify-client
 
 # Downloading DEB files
 wget -q https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2018.11.28_amd64.deb -O ~/Downloads/dropbox.deb --show-progress
+wget -q https://mega.nz/linux/MEGAsync/xUbuntu_18.04/amd64/megasync-xUbuntu_18.04_amd64.deb -O ~/Downloads/mega.deb --show-progress
+wget -q https://mega.nz/linux/MEGAsync/xUbuntu_18.04/amd64/nautilus-megasync-xUbuntu_18.04_amd64.deb -O ~/Downloads/mega_nautilus_ext.deb --show-progress
 wget -q https://global.download.synology.com/download/Tools/CloudStationDrive/4.2.8-4421/Ubuntu/Installer/x86_64/synology-cloud-station-drive-4421.x86_64.deb -O ~/Downloads/synologycloud.deb --show-progress
 wget -q https://telegram.org/dl/desktop/linux -O ~/Downloads/telegram.tar.xz --show-progress
 wget -q https://go.skype.com/skypeforlinux-64.deb -O ~/Downloads/skype.deb --show-progress
@@ -99,6 +101,8 @@ wget -q https://go.microsoft.com/fwlink/?LinkID=760868 -O ~/Downloads/vscode.deb
 wget -q https://steamcdn-a.akamaihd.net/client/installer/steam.deb -O ~/Downloads/steam.deb --show-progress
 wget -q https://github.com/shiftkey/desktop/releases/download/release-1.5.1-linux2/GitHubDesktop-linux-1.5.1-linux2.deb -O ~/Downloads/githubdesktop.deb --show-progress
 sudo gdebi -n ~/Downloads/dropbox.deb
+sudo gdebi -n ~/Downloads/mega.deb
+sudo gdebi -n ~/Downloads/mega_nautilus_ext.deb
 sudo gdebi -n ~/Downloads/synologycloud.deb
 sudo gdebi -n ~/Downloads/vscode.deb
 sudo gdebi -n ~/Downloads/skype.deb
