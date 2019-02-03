@@ -27,7 +27,7 @@ gnome-sudoku \
 gnome-mines \
 gnome-weather \
 chrome-gnome-shell \
-gnome-tweaks \
+gnome-tweaks
 
 
 # Installing packages from APT
