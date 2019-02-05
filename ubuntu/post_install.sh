@@ -33,13 +33,13 @@ gnome-tweaks
 # Installing packages from APT
 sudo apt install -y \
 git \
-build-essential \
 gdebi \
 synaptic \
 usb-creator-gtk
 
 sudo apt install -y \
 qt5-style-plugins
+build-essential
 
 sudo apt install -y \
 fonts-firacode \
@@ -201,4 +201,11 @@ gsettings set org.gnome.gedit.preferences.editor wrap-last-split-mode "'word'"
 
 # Remove all downloaded files upon successful completion of the operations above
 sudo rm ~/Downloads/* -rf
+
+echo 'Rebooting in 10 seconds... [Ctrl+C to cancel]'
+for i in {10..01}
+do
+	echo "$i"
+	sleep 1
+done
 sudo shutdown -r now
