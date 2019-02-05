@@ -26,13 +26,7 @@ It targets Ubuntu and does not make assumptions about the desktop environment (s
 	- Fira Sans font family
 	- Roboto Mono font family
 
-
-
-Things left to be done manually (or to be added to the script):
-
-- Logout after `communitheme` is installed, login with snap active
-- Set shell theme after enabling the User Themes extension
-- Logout after `gnome-extensions-*` are installed from APT, so to enable them at next login
+The script finally performs a clean-up of files that will not be necessary after the operations.
 
 
 ## Desktop environment-specific configurators
@@ -59,9 +53,11 @@ Again, this is about the minimal installation.
 	- Allow `Super`+`Right Click` to resize windows
 	- Removes traces of `Ctrl`+`Alt`+arrow to navigate across workspaces, so to avoid conflicts with similar shortcuts defined in other applications (e.g., [VS Code](https://github.com/Microsoft/vscode/issues/509))
 
-They try to install the GTK themes, the Shell themes and the icon themes, when these are available.
-Setting the Shell theme is left to the user's manual operation.
-The scripts finally perform a clean-up of files that will not be necessary after the operations.
+Things left to be done manually (or to be added to the script):
+
+- Logout after `communitheme` is installed, login with snap active
+- Set shell theme after enabling the User Themes extension
+- Logout after `gnome-extensions-*` are installed from APT, so to enable them at next login
 
 
 ### KDE (KDE Neon)
