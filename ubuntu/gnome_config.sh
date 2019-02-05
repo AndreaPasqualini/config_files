@@ -29,6 +29,7 @@ sudo apt install -y \
 gdebi \
 synaptic \
 usb-creator-gtk \
+transmission-gtk \
 qt5-style-plugins
 
 
