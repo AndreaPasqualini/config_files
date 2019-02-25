@@ -154,7 +154,6 @@ gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize-or-
 gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 36
 gsettings set org.gnome.desktop.background show-desktop-icons false
 gsettings set org.gnome.desktop.background picture-uri 'file:///usr/share/backgrounds/linuxmint-tessa/bfantinatti_small_leaves.jpg'
-gsettings set org.gnome.desktop.interface text-scaling-factor 1.2
 gsettings set org.gnome.desktop.interface clock-show-date true
 gsettings set org.gnome.desktop.interface cursor-size 32
 gsettings set org.gnome.desktop.wm.preferences button-layout 'close,minimize,maximize:'
