@@ -46,9 +46,6 @@ spyder3
 
 sudo apt install -y npm
 
-# Install Communitheme from Snap store
-sudo snap install communitheme
-
 
 # Fixing unwanted snaps and installing Tweak Tool
 sudo snap remove \
