@@ -44,8 +44,6 @@ jupyter \
 jupyter-notebook \
 spyder3
 
-sudo apt install -y npm
-
 
 # Fixing unwanted snaps and installing Tweak Tool
 sudo snap remove \
