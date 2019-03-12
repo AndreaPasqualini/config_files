@@ -119,6 +119,28 @@ gsettings set org.nemo.desktop desktop-layout "'false::false'"
 gsettings set org.nemo.desktop font "'Noto Sans 11'"
 gsettings set org.nemo.plugins disabled-actions "['add-desklets.nemo-action', 'send-by-mail.nemo-action']"
 
+# Setting custom keybindings (eradicating traces of <Control><Alt> bindings)
+gsettings set org.cinnamon.desktop.keybindings.wm move-to-workspace-up "['<Super><Shift><Alt>Up']"
+gsettings set org.cinnamon.desktop.keybindings.wm move-to-workspace-down "['<Super><Shift><Alt>Down']"
+gsettings set org.cinnamon.desktop.keybindings.wm move-to-workspace-left "['<Super><Shift><Alt>Left']"
+gsettings set org.cinnamon.desktop.keybindings.wm move-to-workspace-right "['<Super><Shift><Alt>Right']"
+gsettings set org.cinnamon.desktop.keybindings.wm push-snap-up "['']"
+gsettings set org.cinnamon.desktop.keybindings.wm push-snap-down "['']"
+gsettings set org.cinnamon.desktop.keybindings.wm push-snap-left "['']"
+gsettings set org.cinnamon.desktop.keybindings.wm push-snap-right "['']"
+gsettings set org.cinnamon.desktop.keybindings.wm switch-panels "['<Super>Tab']"
+gsettings set org.cinnamon.desktop.keybindings.wm switch-to-workspace-up "['<Super><Control>Up']"
+gsettings set org.cinnamon.desktop.keybindings.wm switch-to-workspace-down "['<Super><Control>Down']"
+gsettings set org.cinnamon.desktop.keybindings.wm switch-to-workspace-left "['<Super><Control>Left']"
+gsettings set org.cinnamon.desktop.keybindings.wm switch-to-workspace-right "['<Super><Control>Right']"
+gsettings set org.cinnamon.desktop.keybindings.wm toggle-recording "['<Super><Control><Shift>r']"
+gsettings set org.cinnamon.desktop.keybindings looking-glass-keybinding "['']"
+gsettings set org.cinnamon.desktop.keybindings.media-keys terminal "['<Super>t']"
+gsettings set org.cinnamon.desktop.keybindings.media-keys screen-saver "['<Super>l']"
+gsettings set org.cinnamon.desktop.keybindings.media-keys logout "['<Super><Control>Delete']"
+gsettings set org.cinnamon.desktop.keybindings.media-keys shutdown "['<Super><Control>End']"
+gsettings set org.cinnamon.desktop.keybindings.media-keys restart-cinnamon "['<Super><Control>Escape']"
+
 # Removing unused dependencies
 sudo apt autoremove -y
 
