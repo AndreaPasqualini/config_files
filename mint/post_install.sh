@@ -6,6 +6,7 @@ sudo apt purge -y \
 thunderbird \
 hexchat \
 rhythmbox \
+xplayer \
 onboard
 
 sudo apt autoremove -y
