@@ -8,6 +8,8 @@ hexchat \
 rhythmbox \
 onboard
 
+sudo apt autoremove -y
+
 sudo apt install -y \
 fonts-firacode \
 fonts-noto-mono \
