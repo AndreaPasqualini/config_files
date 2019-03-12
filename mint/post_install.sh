@@ -49,6 +49,7 @@ sudo apt install -y \
 spotify-client \
 skypeforlinux \
 telegram-desktop \
+dropbox \
 nemo-dropbox \
 sqlitebrowser
 
