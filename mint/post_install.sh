@@ -142,6 +142,13 @@ gsettings set org.cinnamon.desktop.keybindings.media-keys logout "['<Super><Cont
 gsettings set org.cinnamon.desktop.keybindings.media-keys shutdown "['<Super><Control>End']"
 gsettings set org.cinnamon.desktop.keybindings.media-keys restart-cinnamon "['<Super><Control>Escape']"
 
+# Setting FreeSans and font size in cinnamon-shell builtin themes
+for cssfile in "/usr/share/themes/Mint-Y*/cinnamon/cinnamon.css"
+do
+	sudo sed -i.bak s/'  font-family: Noto Sans, Sans-Serif'/'  font-family: FreeSans, Noto Sans, Sans-Serif'/g cssfile
+	sudo sed -i.bak s/'  font-size: 9pt'/'  font-size: 10pt'/g cssfile
+done
+
 # Removing unused dependencies
 sudo apt autoremove -y
 
