@@ -5,7 +5,8 @@ sudo apt update && sudo apt upgrade -y
 sudo apt purge -y \
 thunderbird \
 hexchat \
-rhythmbox
+rhythmbox \
+onboard
 
 sudo apt install -y \
 fonts-firacode \
