@@ -53,12 +53,12 @@ nemo-dropbox \
 sqlitebrowser
 
 wget -q https://mega.nz/linux/MEGAsync/xUbuntu_18.04/amd64/megasync-xUbuntu_18.04_amd64.deb -O ~/Downloads/mega.deb --show-progress
-wget -q https://mega.nz/linux/MEGAsync/xUbuntu_18.04/amd64/nautilus-megasync-xUbuntu_18.04_amd64.deb -O ~/Downloads/mega_nautilus_ext.deb --show-progress
+# wget -q https://mega.nz/linux/MEGAsync/xUbuntu_18.04/amd64/nautilus-megasync-xUbuntu_18.04_amd64.deb -O ~/Downloads/mega_nautilus_ext.deb --show-progress
 wget -q https://go.microsoft.com/fwlink/?LinkID=760868 -O ~/Downloads/vscode.deb --show-progress
 wget -q https://github.com/shiftkey/desktop/releases/download/release-1.6.3-linux1/GitHubDesktop-linux-1.6.3.deb -O ~/Downloads/githubdesktop.deb --show-progress
 wget -q https://download.teamviewer.com/download/linux/teamviewer_amd64.deb -O ~/Downloads/teamviewer.deb --show-progress
 sudo gdebi -n ~/Downloads/mega.deb
-sudo gdebi -n ~/Downloads/mega_nautilus_ext.deb
+# sudo gdebi -n ~/Downloads/mega_nautilus_ext.deb
 sudo gdebi -n ~/Downloads/vscode.deb
 sudo gdebi -n ~/Downloads/githubdesktop.deb
 sudo gdebi -n ~/Downloads/teamviewer.deb
