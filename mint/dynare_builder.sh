@@ -46,6 +46,7 @@ wget https://www.dynare.org/release/source/dynare-4.5.7.tar.xz
 # Unpacking source
 
 tar xf dynare-4.5.7.tar.xz
+cd ./dynare-4.5.7
 
 
 # Configuring and building
