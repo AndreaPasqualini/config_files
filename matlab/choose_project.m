@@ -31,6 +31,16 @@ function varargout = choose_project(projectName)
       cd( projectPath )
       addpath('./code')
       addpath(genpath('./code/lib'))
+      
+    case 'ta-macro4'  % ================================== TA MacroEconomics IV
+      whichone = input('Which TA session are you working on? (1..6) >> ', 's');
+      projectPath = [homePath, '/Mega/Teaching/40213-macro4/aa1819/'];
+      if strcmp( whichone, '0' )
+        cd( projectPath )
+      else
+        sessionPath = ['ta', whichone, '/matlab/'];
+        cd( [ projectPath, sessionPath ] )
+      end
 
     otherwise  % ==================================================== (unknown)
       error('Unknown project ''%s'': bad input or new project?', projectName)
