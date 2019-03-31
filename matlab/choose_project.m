@@ -26,13 +26,13 @@ function varargout = choose_project(projectName)
   
   switch projectName
 
-    case 'frame'  % ====================================================== FRAME
-      cd(projectPath)
+    case 'frame'  % ===================================================== FRAME
       projectPath = [homePath, '/Documents/GitHub/frame_wp5'];
+      cd( projectPath )
       addpath('./code')
       addpath(genpath('./code/lib'))
 
-    otherwise  % ===================================================== (unknown)
+    otherwise  % ==================================================== (unknown)
       error('Unknown project ''%s'': bad input or new project?', projectName)
 
   end
