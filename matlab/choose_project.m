@@ -27,8 +27,8 @@ function varargout = choose_project(projectName)
   switch projectName
 
     case 'frame'  % ====================================================== FRAME
-      projectPath = [homePath, '/Documents/frame_wp5'];
       cd(projectPath)
+      projectPath = [homePath, '/Documents/GitHub/frame_wp5'];
       addpath('./code')
       addpath(genpath('./code/lib'))
 
