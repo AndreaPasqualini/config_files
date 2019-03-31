@@ -8,8 +8,8 @@ function varargout = choose_project(projectName)
   % projectName : str
   %               A string with the name of the project. If the project is not
   %               recognized, an exception is raised and nothing will be
-  %               executed. In such case, maybe you want to add the case to this
-  %               function.
+  %               executed. In such case, maybe you want to add the case to
+  %               this function.
   %
   %
   % RETURNS
