@@ -52,16 +52,23 @@ dropbox \
 nemo-dropbox \
 sqlitebrowser
 
+echo '\ndeb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/' >> /etc/apt/sources.list
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
+sudo apt update
+sudo apt install -y r-base-core
+
 wget -q https://mega.nz/linux/MEGAsync/xUbuntu_18.04/amd64/megasync-xUbuntu_18.04_amd64.deb -O ~/Downloads/mega.deb --show-progress
 # wget -q https://mega.nz/linux/MEGAsync/xUbuntu_18.04/amd64/nautilus-megasync-xUbuntu_18.04_amd64.deb -O ~/Downloads/mega_nautilus_ext.deb --show-progress
 wget -q https://go.microsoft.com/fwlink/?LinkID=760868 -O ~/Downloads/vscode.deb --show-progress
 wget -q https://github.com/shiftkey/desktop/releases/download/release-1.6.3-linux1/GitHubDesktop-linux-1.6.3.deb -O ~/Downloads/githubdesktop.deb --show-progress
 wget -q https://download.teamviewer.com/download/linux/teamviewer_amd64.deb -O ~/Downloads/teamviewer.deb --show-progress
+wget -q https://download1.rstudio.org/desktop/bionic/amd64/rstudio-1.2.1335-amd64.deb -O /Downloads/rstudio.deb --show-progress
 sudo gdebi -n ~/Downloads/mega.deb
 # sudo gdebi -n ~/Downloads/mega_nautilus_ext.deb
 sudo gdebi -n ~/Downloads/vscode.deb
 sudo gdebi -n ~/Downloads/githubdesktop.deb
 sudo gdebi -n ~/Downloads/teamviewer.deb
+sudo gdebi -n ~/Downloads/rstudio.deb
 
 # Downloading fonts found on the web
 mkdir ~/Downloads/Fira
