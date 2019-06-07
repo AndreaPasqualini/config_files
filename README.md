@@ -32,6 +32,6 @@ Before you do this, read the state of `ExecutionPolicy` with `Get-ExecutionPolic
 After execution, you should run again `Set-ExecutionPolicy` to restore the previous settings.
 
 
-### Ubuntu
+### Linux Mint
 
-See the [specific README](./ubuntu/README.md) for further info about this.
+See the [specific README](./mint/README.md) for further info about this.

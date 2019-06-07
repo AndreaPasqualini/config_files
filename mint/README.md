@@ -19,8 +19,7 @@ Current features:
 
 Desiderata:
 
-- Remove any trace of `Ctrl`+`Alt` shortcuts, replace with `Meta`+`Ctrl`
-- Set Mint-Y-red as GTK theme and icon theme, set Mint-Y-dark-red as Cinnamon theme
 - Set Accessibility -> Large text
 - Set all fonts size to 11
 - Set QT5 settings fonts to match
+- Set new deb source for R (CRAN) and download `r-base-core`
