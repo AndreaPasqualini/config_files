@@ -65,6 +65,7 @@ gnome-sudoku \
 gnome-mines \
 gnome-weather \
 chrome-gnome-shell \
+gnome-shell-extension-remove-dropdown-arrows \
 gnome-tweaks
 
 sudo apt install -y \
