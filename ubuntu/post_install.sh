@@ -219,6 +219,15 @@ rm -rf ./adementary-theme
 sudo cp /usr/share/themes/Adementary/gnome-shell/gnome-shell.css /usr/share/themes/Adementary/gnome-shell/gnome-shell.css.bak
 sudo cp /usr/share/themes/Adementary-light/gnome-shell/gnome-shell.css /usr/share/themes/Adementary-light/gnome-shell/gnome-shell.css.bak
 sudo cp /usr/share/themes/Adementary-dark/gnome-shell/gnome-shell.css /usr/share/themes/Adementary-dark/gnome-shell/gnome-shell.css.bak
+sudo sed s/'  height: 28px'/'  height: 36px'/g /usr/share/themes/Adementary/gnome-shell/gnome-shell.css
+sudo sed s/'  height: 28px'/'  height: 36px'/g /usr/share/themes/Adementary-light/gnome-shell/gnome-shell.css
+sudo sed s/'  height: 28px'/'  height: 36px'/g /usr/share/themes/Adementary-dark/gnome-shell/gnome-shell.css
+sudo sed s/'  font-size: 9pt'/'  font-size: 10pt'/ /usr/share/themes/Adementary/gnome-shell/gnome-shell.css
+sudo sed s/'  font-size: 9pt'/'  font-size: 10pt'/ /usr/share/themes/Adementary-light/gnome-shell/gnome-shell.css
+sudo sed s/'  font-size: 9pt'/'  font-size: 10pt'/ /usr/share/themes/Adementary-dark/gnome-shell/gnome-shell.css
+sudo sed s/'  font-family: Noto Sans, Cantarell, Sans-Serif'/'  font-family: Roboto, Noto Sans, Cantarell, Sans-Serif'/ /usr/share/themes/Adementary/gnome-shell/gnome-shell.css
+sudo sed s/'  font-family: Noto Sans, Cantarell, Sans-Serif'/'  font-family: Roboto, Noto Sans, Cantarell, Sans-Serif'/ /usr/share/themes/Adementary-light/gnome-shell/gnome-shell.css
+sudo sed s/'  font-family: Noto Sans, Cantarell, Sans-Serif'/'  font-family: Roboto, Noto Sans, Cantarell, Sans-Serif'/ /usr/share/themes/Adementary-dark/gnome-shell/gnome-shell.css
 
 # Setting the theme
 gsettings set org.gnome.desktop.interface gtk-theme 'Adementary'
