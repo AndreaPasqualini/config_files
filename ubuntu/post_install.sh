@@ -182,11 +182,11 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "'<Super>t'"
 gsettings set org.gnome.nautilus.preferences default-folder-viewer "'list-view'"
 gsettings set org.gnome.nautilus.preferences search-view "'list-view'"
 gsettings set org.gnome.nautilus.preferences search-filter-time-type "'last_modified'"
-# gsettings set org.gnome.nautilus.preferences default-visible-columns "['name', 'size', 'type', 'date_modified']"
+gsettings set org.gnome.nautilus.list-view default-visible-columns "['name', 'size', 'type', 'date_modified']"
 
 
 # Modifying Terminal settings
-# gsettings set org.gnome.terminal.legacy theme-variant "'dark'"
+gsettings set org.gnome.Terminal.Legacy.Settings theme-variant "'dark'"
 
 
 # Modifying Gedit settings
