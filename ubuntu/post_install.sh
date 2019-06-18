@@ -232,10 +232,10 @@ sudo sed s/'  font-family: Noto Sans, Cantarell, Sans-Serif'/'  font-family: Rob
 # Setting the theme
 gsettings set org.gnome.desktop.interface gtk-theme 'Adementary'
 gsettings set org.gnome.desktop.interface icon-theme 'ePapirus'
-gsettings set org.gnome.desktop.interface font-name 'Noto Sans 10'
+gsettings set org.gnome.desktop.interface font-name 'Roboto 11'
 gsettings set org.gnome.desktop.interface monospace-font-name 'Hack 10'
-gsettings set org.gnome.desktop.interface document-font-name 'Noto Sans 10'
-gsettings set org.gnome.desktop.wm.preferences titlebar-font 'Noto Sans Bold 10'
+gsettings set org.gnome.desktop.interface document-font-name 'FreeSans 11'
+gsettings set org.gnome.desktop.wm.preferences titlebar-font 'Roboto Bold 11'
 
 
 # Remove all downloaded files upon successful completion of the operations above
