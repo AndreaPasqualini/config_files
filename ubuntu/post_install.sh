@@ -216,12 +216,9 @@ sudo apt autoremove -y
 rm -rf ./adementary-theme
 
 # Fixing height and font size in Gnome shell top bar for my laptop's screen
-sudo sed -i.bak s/'  height: 28px'/'  height: 36px'/g /usr/share/themes/Adementary/gnome-shell/gnome-shell.css
-sudo sed -i.bak s/'  height: 28px'/'  height: 36px'/g /usr/share/themes/Adementary-dark/gnome-shell/gnome-shell.css
-sudo sed -i.bak s/'  height: 28px'/'  height: 36px'/g /usr/share/themes/Adementary-light/gnome-shell/gnome-shell.css
-sudo sed -i.bak s/'  font-size: 9pt'/'  font-size: 10pt'/ /usr/share/themes/Adementary/gnome-shell/gnome-shell.css
-sudo sed -i.bak s/'  font-size: 9pt'/'  font-size: 10pt'/ /usr/share/themes/Adementary-dark/gnome-shell/gnome-shell.css
-sudo sed -i.bak s/'  font-size: 9pt'/'  font-size: 10pt'/ /usr/share/themes/Adementary-light/gnome-shell/gnome-shell.css
+sudo cp /usr/share/themes/Adementary/gnome-shell/gnome-shell.css /usr/share/themes/Adementary/gnome-shell/gnome-shell.css.bak
+sudo cp /usr/share/themes/Adementary-light/gnome-shell/gnome-shell.css /usr/share/themes/Adementary-light/gnome-shell/gnome-shell.css.bak
+sudo cp /usr/share/themes/Adementary-dark/gnome-shell/gnome-shell.css /usr/share/themes/Adementary-dark/gnome-shell/gnome-shell.css.bak
 
 # Setting the theme
 gsettings set org.gnome.desktop.interface gtk-theme 'Adementary'
