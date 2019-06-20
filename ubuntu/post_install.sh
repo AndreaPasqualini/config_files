@@ -69,6 +69,8 @@ transmission-gtk \
 qt5-style-plugins
 
 
+# Installing snaps
+sudo snap install telegram-desktop
 
 
 # Installing Spotify
@@ -87,7 +89,6 @@ sudo apt update && sudo apt install -y r-base-core
 wget -q https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2018.11.28_amd64.deb -O ~/Downloads/dropbox.deb --show-progress
 wget -q https://mega.nz/linux/MEGAsync/xUbuntu_18.04/amd64/megasync-xUbuntu_18.04_amd64.deb -O ~/Downloads/mega.deb --show-progress
 wget -q https://mega.nz/linux/MEGAsync/xUbuntu_18.04/amd64/nautilus-megasync-xUbuntu_18.04_amd64.deb -O ~/Downloads/mega_nautilus_ext.deb --show-progress
-wget -q https://telegram.org/dl/desktop/linux -O ~/Downloads/telegram.tar.xz --show-progress
 wget -q https://go.skype.com/skypeforlinux-64.deb -O ~/Downloads/skype.deb --show-progress
 wget -q https://go.microsoft.com/fwlink/?LinkID=760868 -O ~/Downloads/vscode.deb --show-progress
 wget -q https://download1.rstudio.org/desktop/bionic/amd64/rstudio-1.2.1335-amd64.deb -O ~/Downloads/rstudio.deb --show-progress
@@ -101,8 +102,6 @@ sudo gdebi -n ~/Downloads/skype.deb
 sudo gdebi -n ~/Downloads/rstudio.deb
 sudo gdebi -n ~/Downloads/githubdesktop.deb
 sudo gdebi -n ~/Downloads/whatsdesk.deb
-tar xf ~/Downloads/telegram.tar.xz -C ~/Downloads
-~/Downloads/Telegram/Telegram
 
 
 # Downloading Linux Mint backgrounds
