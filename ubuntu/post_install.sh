@@ -192,41 +192,6 @@ gsettings set org.gnome.gedit.preferences.editor tabs-size 4
 gsettings set org.gnome.gedit.preferences.editor wrap-last-split-mode "'word'"
 
 
-# Setting the Tetra GTK theme (https://github.com/hrdwrrsk/tetra-gtk-theme)
-
-# Checking dependencies
-sudo apt install -y sassc bc inkscape optipng papirus-icon-theme
-
-# Downloading assets and installing
-cd ~/Downloads
-git clone https://github.com/hrdwrrsk/adementary-theme.git
-sudo ./adementary-theme/install.sh
-
-sudo apt purge -y sassc bc
-sudo apt autoremove -y
-rm -rf ./adementary-theme
-
-# Fixing height and font size in Gnome shell top bar for my laptop's screen
-sudo cp /usr/share/themes/Adementary/gnome-shell/gnome-shell.css /usr/share/themes/Adementary/gnome-shell/gnome-shell.css.bak
-sudo cp /usr/share/themes/Adementary-light/gnome-shell/gnome-shell.css /usr/share/themes/Adementary-light/gnome-shell/gnome-shell.css.bak
-sudo cp /usr/share/themes/Adementary-dark/gnome-shell/gnome-shell.css /usr/share/themes/Adementary-dark/gnome-shell/gnome-shell.css.bak
-sudo sed s/'  height: 28px'/'  height: 36px'/g /usr/share/themes/Adementary/gnome-shell/gnome-shell.css
-sudo sed s/'  height: 28px'/'  height: 36px'/g /usr/share/themes/Adementary-light/gnome-shell/gnome-shell.css
-sudo sed s/'  height: 28px'/'  height: 36px'/g /usr/share/themes/Adementary-dark/gnome-shell/gnome-shell.css
-sudo sed s/'  font-size: 9pt'/'  font-size: 10pt'/ /usr/share/themes/Adementary/gnome-shell/gnome-shell.css
-sudo sed s/'  font-size: 9pt'/'  font-size: 10pt'/ /usr/share/themes/Adementary-light/gnome-shell/gnome-shell.css
-sudo sed s/'  font-size: 9pt'/'  font-size: 10pt'/ /usr/share/themes/Adementary-dark/gnome-shell/gnome-shell.css
-sudo sed s/'  font-family: Noto Sans, Cantarell, Sans-Serif'/'  font-family: Roboto, Noto Sans, Cantarell, Sans-Serif'/ /usr/share/themes/Adementary/gnome-shell/gnome-shell.css
-sudo sed s/'  font-family: Noto Sans, Cantarell, Sans-Serif'/'  font-family: Roboto, Noto Sans, Cantarell, Sans-Serif'/ /usr/share/themes/Adementary-light/gnome-shell/gnome-shell.css
-sudo sed s/'  font-family: Noto Sans, Cantarell, Sans-Serif'/'  font-family: Roboto, Noto Sans, Cantarell, Sans-Serif'/ /usr/share/themes/Adementary-dark/gnome-shell/gnome-shell.css
-
-# Setting the theme
-gsettings set org.gnome.desktop.interface gtk-theme 'Adementary'
-gsettings set org.gnome.desktop.interface icon-theme 'ePapirus'
-gsettings set org.gnome.desktop.interface font-name 'Roboto 10'
-gsettings set org.gnome.desktop.interface monospace-font-name 'Hack 10'
-gsettings set org.gnome.desktop.interface document-font-name 'Roboto 11'
-gsettings set org.gnome.desktop.wm.preferences titlebar-font 'Roboto Medium 11'
 # Fix QT5 widget theme in applications
 echo "QT_QPA_PLATFORMTHEME=gtk2" | sudo tee -a /etc/environment
 
