@@ -51,7 +51,6 @@ gnome-characters
 sudo apt install -y \
 baobab \
 vlc \
-simple-scan \
 gnome-system-monitor \
 gnome-logs \
 gnome-calculator \
