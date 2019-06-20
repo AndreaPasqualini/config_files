@@ -24,8 +24,7 @@ texlive-lang-italian \
 texlive-latex-base \
 texlive-pictures \
 texlive-science \
-texlive-pstricks \
-texstudio
+texlive-pstricks
 
 sudo apt install -y \
 python3-numpy \
