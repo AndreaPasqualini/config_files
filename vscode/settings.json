@@ -1,5 +1,5 @@
 {
-  "editor.fontFamily": "'Fira Code Retina', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+  "editor.fontFamily": "'Fira Code Retina', 'Noto Mono', monospace",
     "workbench.startupEditor": "none",
     "editor.wordWrap": "wordWrapColumn",
     "editor.fontLigatures": true,
