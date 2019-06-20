@@ -163,8 +163,13 @@ gsettings set org.gnome.gedit.preferences.editor tabs-size 4
 gsettings set org.gnome.gedit.preferences.editor wrap-last-split-mode "'word'"
 
 
+# Installing Yaru theme (aka communitheme in bionic)
+sudo snap install communitheme
+
+
 # Fix QT5 widget theme in applications
 echo "QT_QPA_PLATFORMTHEME=gtk2" | sudo tee -a /etc/environment
+
 
 
 # Remove all downloaded files upon successful completion of the operations above
