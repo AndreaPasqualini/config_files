@@ -10,13 +10,9 @@ git \
 build-essential
 
 sudo apt install -y \
-fonts-firacode \
-fonts-noto-mono \
-fonts-hack \
-fonts-dejavu \
 fonts-noto \
-fonts-roboto \
-fonts-roboto-slab
+fonts-noto-mono \
+fonts-firacode
 
 sudo apt install -y \
 texlive-base \
