@@ -69,8 +69,6 @@ transmission-gtk \
 qt5-style-plugins
 
 
-# Fix QT5 widget theme in applications
-echo "export QT_QPA_PLATFORMTHEME=gtk2" | sudo tee -a /etc/environment
 
 
 # Installing Spotify
@@ -229,6 +227,8 @@ gsettings set org.gnome.desktop.interface font-name 'Roboto 10'
 gsettings set org.gnome.desktop.interface monospace-font-name 'Hack 10'
 gsettings set org.gnome.desktop.interface document-font-name 'Roboto 11'
 gsettings set org.gnome.desktop.wm.preferences titlebar-font 'Roboto Medium 11'
+# Fix QT5 widget theme in applications
+echo "QT_QPA_PLATFORMTHEME=gtk2" | sudo tee -a /etc/environment
 
 
 # Remove all downloaded files upon successful completion of the operations above
