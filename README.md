@@ -30,3 +30,9 @@ To be able to run the (unsigned) script, you should start a PowerShell with admi
 Confirm the action at the resulting prompt _only if you understand the consequences_.
 Before you do this, read the state of `ExecutionPolicy` with `Get-ExecutionPolicy`.
 After execution, you should run again `Set-ExecutionPolicy` to restore the previous settings.
+
+
+## Credits
+
+Thanks to [@eddelbuettel](https://github.com/eddelbuettel) for [his script](https://github.com/eddelbuettel/mkl4deb/blob/master/script.sh) to install Intel's MKL on deb-based systems.
+My version differs from his just for the update to the specific MKL version I want to download.
