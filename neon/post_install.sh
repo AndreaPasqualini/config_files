@@ -37,7 +37,8 @@ python3-selenium \
 ipython3 \
 jupyter \
 jupyter-notebook \
-spyder3
+spyder3 \
+firefox-geckodriver
 
 sudo apt install -y \
 libreoffice-calc \
