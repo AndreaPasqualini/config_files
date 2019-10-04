@@ -1,7 +1,8 @@
 # My Configuration Files
 
 Will include my own configuration files for the following programs & co.:
-- Ubuntu post-install script
+- Ubuntu (as served from ubuntu.com) post-install script
+- KDE Neon post-install script
 - Windows post-install script
 - Linux file templates to be typically put in `~/Templates/`
 - Matlab configuration (cross-platform)
@@ -30,8 +31,3 @@ To be able to run the (unsigned) script, you should start a PowerShell with admi
 Confirm the action at the resulting prompt _only if you understand the consequences_.
 Before you do this, read the state of `ExecutionPolicy` with `Get-ExecutionPolicy`.
 After execution, you should run again `Set-ExecutionPolicy` to restore the previous settings.
-
-
-### Linux Mint
-
-See the [specific README](./mint/README.md) for further info about this.
