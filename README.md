@@ -14,8 +14,8 @@ Will include my own configuration files for the following programs & co.:
 A responsibility waiver is in the [License file](./LICENSE).
 You run the scripts at your own risk.
 If you run my code and your machine explodes and you point the finger at me, I will laugh at you.
-Read the code before executing, unless you **blindly** trust the source (you shouldn't anyway).
-What I publish here should work (works for me, at least), but you have the reponsibility of checking before executing.
+Read the code before executing, unless you blindly trust the source (you shouldn't anyway).
+What I publish here should work (works for me, at least), but you have the reponsibility of _understanding_ before executing.
 
 Pull Requests are welcome!
 
