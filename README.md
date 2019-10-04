@@ -1,8 +1,7 @@
 # My Configuration Files
 
 Will include my own configuration files for the following programs & co.:
-- Ubuntu (as served from ubuntu.com) post-install script
-- KDE Neon post-install script
+- [KDE Neon](https://neon.kde.org/) post-install script
 - Windows post-install script
 - Linux file templates to be typically put in `~/Templates/`
 - Matlab configuration (cross-platform)
