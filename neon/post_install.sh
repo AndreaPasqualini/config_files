@@ -50,7 +50,7 @@ plasma-applet-redshift-control
 
 
 # Getting rid of ugly snapd
-sudo apt purge -y snap
+sudo apt purge -y snapd
 
 
 # Installing Spotify
