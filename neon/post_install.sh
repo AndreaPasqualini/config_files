@@ -59,6 +59,10 @@ echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sou
 sudo apt update && sudo apt install -y spotify-client
 
 
+# Installing Intel's MKL
+sudo bash ./mkl4deb.sh
+
+
 # Installing R system
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
 echo "deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/" | sudo tee /etc/apt/sources.list.d/cran.list
