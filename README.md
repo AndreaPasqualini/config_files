@@ -36,4 +36,6 @@ After execution, you should run again `Set-ExecutionPolicy` to restore the previ
 Thanks to [@eddelbuettel](https://github.com/eddelbuettel) for [his script](https://github.com/eddelbuettel/mkl4deb/blob/master/script.sh) to install Intel's MKL on deb-based systems.
 My version differs from his just for the update to the specific MKL version I want to download.
 
+Thanks to [@abu_bua](https://askubuntu.com/users/790920/abu-bua) for the file [`pdftk_installer.sh`](./neon/pdftk_installer.sh), which (s)he contributed via [this answer on AskUbuntu](https://askubuntu.com/a/1046476).
+
 The file [`matlab.ico`](./matlab/matlab.ico) is property of [The Mathworks Inc](https://www.mathworks.com/).

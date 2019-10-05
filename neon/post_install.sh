@@ -69,6 +69,10 @@ echo "deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/" | sudo te
 sudo apt update && sudo apt install -y r-base-core
 
 
+# Installing pdftk from Ubuntu 17.10 packages
+sudo bash pdftk_installer.sh
+
+
 # Downloading DEB files
 wget -q https://go.skype.com/skypeforlinux-64.deb -O ~/Downloads/skype.deb --show-progress
 wget -q https://code.visualstudio.com/docs/?dv=linux64_deb -O ~/Downloads/vscode.deb --show-progress
