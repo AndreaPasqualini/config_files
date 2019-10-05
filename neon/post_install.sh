@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# Update and Upgrade
-sudo apt update && sudo apt full-upgrade -y
-
-
 # Installing packages from APT
 sudo apt install -y \
 build-essential
