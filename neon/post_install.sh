@@ -18,7 +18,8 @@ texlive-latex-base \
 texlive-pictures \
 texlive-science \
 texlive-pstricks \
-latexmk
+latexmk \
+kile
 
 sudo apt install -y \
 python3-numpy \
