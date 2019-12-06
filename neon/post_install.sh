@@ -138,7 +138,7 @@ sudo chown root:root /usr/local/share/fonts/hack_nf/hack_nf_italic.ttf
 sudo chown root:root /usr/local/share/fonts/hack_nf/hack_nf_bold.ttf
 sudo chown root:root /usr/local/share/fonts/hack_nf/hack_nf_bolditalic.ttf
 wget -q https://raw.githubusercontent.com/petobens/trueline/master/trueline.sh -O ~/.trueline.sh --show-progress
-echo 'source ~/.truline.sh' >> ~/.bashrc
+echo 'source ~/.trueline.sh' >> ~/.bashrc
 
 
 # Remove all downloaded files upon successful completion of the operations above
