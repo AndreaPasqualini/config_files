@@ -50,6 +50,21 @@ libudunits2-dev \
 libgdal-dev
 
 
+# Installing TeXlive system
+sudo apt install -y \
+texlive-base \
+texlive-bibtex-extra \
+texlive-fonts-recommended \
+texlive-fonts-extra \
+texlive-lang-english \
+texlive-lang-italian \
+texlive-latex-base \
+texlive-pictures \
+texlive-science \
+texlive-pstricks \
+latexmk \
+kile
+
 # Installing pdftk from Ubuntu 17.10 packages
 sudo bash pdftk_installer.sh
 
