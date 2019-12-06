@@ -11,36 +11,7 @@ fonts-firacode
 
 # Install Libreoffice Writer and Calc
 sudo apt install -y \
-texlive-base \
-texlive-bibtex-extra \
-texlive-fonts-recommended \
-texlive-fonts-extra \
-texlive-lang-english \
-texlive-lang-italian \
-texlive-latex-base \
-texlive-pictures \
-texlive-science \
-texlive-pstricks \
-latexmk \
-kile
-
-sudo apt install -y \
-python3-numpy \
-python3-scipy \
-python3-matplotlib \
-python3-sympy \
-python3-pandas \
-python3-numba \
-python3-xlrd \
-python3-bs4 \
-python3-selenium \
-ipython3 \
-jupyter \
-jupyter-notebook \
-spyder3 \
-firefox-geckodriver
-
-sudo apt install -y \
+libreoffice-writer \
 libreoffice-calc \
 libreoffice-gtk3
 
