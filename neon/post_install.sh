@@ -88,7 +88,7 @@ sudo bash pdftk_installer.sh
 # Downloading DEB files
 wget -q https://go.skype.com/skypeforlinux-64.deb -O ~/Downloads/skype.deb --show-progress
 wget -q https://code.visualstudio.com/docs/?dv=linux64_deb -O ~/Downloads/vscode.deb --show-progress
-wget -q https://download1.rstudio.org/desktop/bionic/amd64/rstudio-1.2.5001-amd64.deb -O ~/Downloads/rstudio.deb --show-progress
+wget -q https://download1.rstudio.org/desktop/bionic/amd64/rstudio-1.2.5019-amd64.deb -O ~/Downloads/rstudio.deb --show-progress
 wget -q https://github.com/shiftkey/desktop/releases/download/release-2.1.0-linux1/GitHubDesktop-linux-2.1.0-linux1.deb -O ~/Downloads/githubdesktop.deb --show-progress
 wget -q https://zerkc.gitlab.io/whatsdesk/whatsdesk_0.2.18_amd64.deb -O ~/Downloads/whatsdesk.deb --show-progress
 wget -q https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2019.02.14_amd64.deb -O ~/Downloads/dropbox.deb --show-progress
