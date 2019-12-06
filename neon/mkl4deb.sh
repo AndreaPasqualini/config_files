@@ -20,7 +20,6 @@ apt-get update
 apt-get install intel-mkl-64bit-2019.5-075   ## wants 500+mb :-/  installs to 1.8 gb :-/
 
 
-
 ## update alternatives
 update-alternatives --install /usr/lib/x86_64-linux-gnu/libblas.so     libblas.so-x86_64-linux-gnu      /opt/intel/mkl/lib/intel64/libmkl_rt.so 150
 update-alternatives --install /usr/lib/x86_64-linux-gnu/libblas.so.3   libblas.so.3-x86_64-linux-gnu    /opt/intel/mkl/lib/intel64/libmkl_rt.so 150
