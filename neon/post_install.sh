@@ -65,6 +65,22 @@ texlive-pstricks \
 latexmk \
 kile
 
+# Installing Stata 16
+wget -q http://download.unibocconi.it/Software/Stata16Linux64.tar.gz -O ~/Downloads/Stata16.tar.gz --show-progress
+mkdir ~/Downloads/stata16
+rm tar -C ~/Downloads/stata16 -xvf ~/Downloads/Stata16.tar.gz
+sudo mkdir /usr/local/Stata16
+cd /usr/local/Stata16
+sudo ~/Downloads/stata16/install  # hands off control to user
+sudo ./stinit                     # hands off control to user
+cd -
+mkdir ~/.ado
+sudo touch /usr/local/Stata16/profile.do
+echo 'sysdir set PLUS "~/.stata16/ado/plus/"' | sudo tee -a /usr/local/Stata16/profile.do
+echo 'sysdir set PERSONAL "~/.stata16/ado/personal/"' | sudo tee -a /usr/local/Stata16/profile.do
+echo 'sysdir set OLDPLACE "~/.stata16/ado/"' | sudo tee -a /usr/local/Stata16/profile.do
+
+
 # Installing pdftk from Ubuntu 17.10 packages
 sudo bash pdftk_installer.sh
 
