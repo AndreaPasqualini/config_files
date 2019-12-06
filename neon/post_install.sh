@@ -20,8 +20,7 @@ sudo apt install -y \
 filelight \
 partitionmanager \
 usb-creator-kde \
-transmission-qt \
-plasma-applet-redshift-control
+transmission-qt
 
 
 # Getting rid of ugly snapd
