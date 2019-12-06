@@ -2,7 +2,8 @@
 
 # Installing packages from APT
 sudo apt install -y \
-build-essential
+build-essential \
+curl
 
 sudo apt install -y \
 fonts-firacode
