@@ -124,10 +124,10 @@ sudo dpkg -i ~/Downloads/mint-backgrounds-*.deb
 
 
 # Tweak bash to use trueline fancy (requires a Nerd Font)
-wget -q https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete%20Mono.ttf -O ~/Downloads/hack_nf_regular.ttf
-wget -q https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Hack/Italic/complete/Hack%20Italic%20Nerd%20Font%20Complete%20Mono.ttf -O ~/Downloads/hack_nf_italic.ttf
-wget -q https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Hack/Bold/complete/Hack%20Bold%20Nerd%20Font%20Complete%20Mono.ttf -O ~/Downloads/hack_nf_bold.ttf
-wget -q https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Hack/BoldItalic/complete/Hack%20Bold%20Italic%20Nerd%20Font%20Complete%20Mono.ttf -O ~/Downloads/hack_nf_bolditalic.ttf
+wget -q https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete%20Mono.ttf -O ~/Downloads/hack_nf_regular.ttf --show-progress
+wget -q https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Hack/Italic/complete/Hack%20Italic%20Nerd%20Font%20Complete%20Mono.ttf -O ~/Downloads/hack_nf_italic.ttf --show-progress
+wget -q https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Hack/Bold/complete/Hack%20Bold%20Nerd%20Font%20Complete%20Mono.ttf -O ~/Downloads/hack_nf_bold.ttf --show-progress
+wget -q https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Hack/BoldItalic/complete/Hack%20Bold%20Italic%20Nerd%20Font%20Complete%20Mono.ttf -O ~/Downloads/hack_nf_bolditalic.ttf --show-progress
 sudo mkdir /usr/local/share/fonts/hack_nf
 sudo mv ~/Downloads/hack_nf_regular.ttf /usr/local/share/fonts/hack_nf/hack_nf_regular.ttf
 sudo mv ~/Downloads/hack_nf_italic.ttf /usr/local/share/fonts/hack_nf/hack_nf_italic.ttf
