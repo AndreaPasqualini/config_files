@@ -144,8 +144,10 @@ echo 'source ~/.trueline.sh' >> ~/.bashrc
 # Remove all downloaded files upon successful completion of the operations above
 sudo rm ~/Downloads/* -rf
 
+
 # Remove unnecessary dependencies
 sudo apt autoremove -y
+
 
 # Rebooting for sanity
 echo 'Rebooting in 10 seconds... [Ctrl+C to cancel]'
