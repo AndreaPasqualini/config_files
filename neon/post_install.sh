@@ -5,9 +5,11 @@ sudo apt install -y \
 build-essential \
 curl
 
+# Install Fira Code font family
 sudo apt install -y \
 fonts-firacode
 
+# Install Libreoffice Writer and Calc
 sudo apt install -y \
 texlive-base \
 texlive-bibtex-extra \
@@ -42,6 +44,7 @@ sudo apt install -y \
 libreoffice-calc \
 libreoffice-gtk3
 
+# Install KDE system tools
 sudo apt install -y \
 filelight \
 partitionmanager \
