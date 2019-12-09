@@ -53,12 +53,15 @@ libgdal-dev
 # Installing TeXlive system
 sudo apt install -y \
 texlive-base \
+texlive-latex-base \
+texlive-latex-recommended \
+texlive-latex-extra \
+texlive-xetex \
 texlive-bibtex-extra \
 texlive-fonts-recommended \
 texlive-fonts-extra \
 texlive-lang-english \
 texlive-lang-italian \
-texlive-latex-base \
 texlive-pictures \
 texlive-science \
 texlive-pstricks \
