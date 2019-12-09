@@ -75,7 +75,11 @@ sudo apt install -y \
 ruby \
 ruby-dev
 
-sudo gem install bundler jekyll
+echo '# Install Ruby Gems to ~/.gems' >> ~/.bashrc
+echo 'export GEM_HOME="$HOME/.gems"' >> ~/.bashrc
+echo 'export PATH="$HOME/.gems/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
+gem install bundler jekyll
 
 
 # Install Mozilla's Fira font family
