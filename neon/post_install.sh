@@ -68,6 +68,16 @@ texlive-pstricks \
 latexmk \
 kile
 
+
+# Install Mozilla's Fira font family
+cd ~/Downloads
+git clone https://github.com/mozilla/Fira
+sudo mkdir /usr/local/share/fonts/Fira
+sudo cp -r ./Fira/ttf/* /usr/local/share/fonts/Fira/
+sudo fc-cache -f
+cd -
+
+
 # Installing Stata 16
 wget -q http://download.unibocconi.it/Software/Stata16Linux64.tar.gz -O ~/Downloads/Stata16.tar.gz --show-progress
 mkdir ~/Downloads/stata16
