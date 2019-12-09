@@ -70,6 +70,14 @@ latexmk \
 kile
 
 
+# Install Ruby, with Bundler and Jekyll
+sudo apt install -y \
+ruby \
+ruby-dev
+
+sudo gem install bundler jekyll
+
+
 # Install Mozilla's Fira font family
 cd ~/Downloads
 git clone https://github.com/mozilla/Fira
