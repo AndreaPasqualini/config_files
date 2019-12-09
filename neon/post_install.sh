@@ -119,7 +119,7 @@ sudo apt install -y \
 ./rstudio.deb \
 ./githubdesktop.deb \
 ./whatsdesk.deb
-cd ~
+cd -
 
 
 # Downloading Linux Mint backgrounds
