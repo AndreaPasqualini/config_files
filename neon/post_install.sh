@@ -51,7 +51,7 @@ libudunits2-dev \
 libgdal-dev
 
 
-# Installing TeXlive system
+# Installing TeXlive system and Kile
 sudo apt install -y \
 texlive-base \
 texlive-latex-base \
