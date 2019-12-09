@@ -138,6 +138,7 @@ wget -qP ~/Downloads http://packages.linuxmint.com/pool/main/m/mint-backgrounds-
 wget -qP ~/Downloads http://packages.linuxmint.com/pool/main/m/mint-backgrounds-tara/mint-backgrounds-tara_1.1_all.deb --show-progress
 wget -qP ~/Downloads http://packages.linuxmint.com/pool/main/m/mint-backgrounds-tessa/mint-backgrounds-tessa_1.1_all.deb --show-progress
 wget -qP ~/Downloads http://packages.linuxmint.com/pool/main/m/mint-backgrounds-tina/mint-backgrounds-tina_1.2_all.deb --show-progress
+wget -qP ~/Downloads http://packages.linuxmint.com/pool/main/m/mint-backgrounds-tricia/mint-backgrounds-tricia_1.1_all.deb --show-progress
 sudo dpkg -i ~/Downloads/mint-backgrounds-*.deb
 
 
