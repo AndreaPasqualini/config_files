@@ -3,6 +3,7 @@
 # Installing packages from APT
 sudo apt install -y \
 build-essential \
+git \
 curl
 
 # Install Fira Code font family
