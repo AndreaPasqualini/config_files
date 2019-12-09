@@ -162,7 +162,7 @@ echo 'source ~/.trueline.sh' >> ~/.bashrc
 
 
 # Remove all downloaded files upon successful completion of the operations above
-sudo rm ~/Downloads/* -rf
+# sudo rm ~/Downloads/* -rf
 
 
 # Remove unnecessary dependencies
