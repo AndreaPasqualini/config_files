@@ -42,5 +42,9 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys home ['<Super>e']
 gsettings set org.gnome.desktop.wm.preferences resize-with-right-button true
 gsettings set org.gnome.mutter workspaces-only-on-primary false
 
+# Set Dash-to-Dock settings
+gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize-or-previews'
+gsettings set org.gnome.shell.extensions.dash-to-dock transparency-mode 'DEFAULT'
+
 # Set Power Management settings
 # missing
