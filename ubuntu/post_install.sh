@@ -38,9 +38,6 @@ tree \
 htop \
 neofetch \
 tty-clock \
-gpart \
-baobab \
-gparted \
 synaptic \
 usb-creator-gtk
 
