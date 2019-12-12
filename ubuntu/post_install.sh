@@ -23,6 +23,15 @@ libreoffice-gtk3
 sudo apt purge -y snapd
 sudo apt install -y gnome-characters gnome-logs
 
+# Install Gnome applications
+sudo apt install -y \
+totem \
+baobab \
+bijiben \
+gnome-clocks \
+gnome-calendar \
+gnome-calculator
+
 # Install system utilities
 sudo apt install -y \
 tree \
