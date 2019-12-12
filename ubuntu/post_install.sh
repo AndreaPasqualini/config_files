@@ -114,6 +114,18 @@ sudo fc-cache -f
 cd -
 
 
+# Install Microsoft's Cascadia Code font family
+mkdir ~/Downloads/Cascadia
+wget -qP ~/Downloads/Cascadia https://github.com/microsoft/cascadia-code/releases/download/v1911.21/Cascadia.ttf --show-progress
+wget -qP ~/Downloads/Cascadia https://github.com/microsoft/cascadia-code/releases/download/v1911.21/CascadiaPL.ttf --show-progress
+wget -qP ~/Downloads/Cascadia https://github.com/microsoft/cascadia-code/releases/download/v1911.21/CascadiaMono.ttf --show-progress
+wget -qP ~/Downloads/Cascadia https://github.com/microsoft/cascadia-code/releases/download/v1911.21/CascadiaMonoPL.ttf --show-progress
+sudo mkdir /usr/local/share/fonts/Cascadia
+sudo cp ~/Downloads/Cascadia/Cascadia* /usr/local/share/fonts/Cascadia/
+sudo chown root:root /usr/local/share/fonts/Cascadia -R
+sudo fc-cache -f
+
+
 # Download DEB files
 wget -q https://go.skype.com/skypeforlinux-64.deb -O ~/Downloads/skype.deb --show-progress
 wget -q https://download1.rstudio.org/desktop/bionic/amd64/rstudio-1.2.5019-amd64.deb -O ~/Downloads/rstudio.deb --show-progress
