@@ -109,6 +109,7 @@ cd ~/Downloads
 git clone https://github.com/mozilla/Fira
 sudo mkdir /usr/local/share/fonts/Fira
 sudo cp -r ./Fira/ttf/* /usr/local/share/fonts/Fira/
+sudo chown root:root /usr/local/share/fonts/Fira -R
 sudo fc-cache -f
 cd -
 
