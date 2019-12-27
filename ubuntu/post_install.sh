@@ -58,11 +58,9 @@ sudo bash ./mkl4deb.sh
 
 
 # Install R system, packages and dependencies
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
-echo "deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/" | sudo tee /etc/apt/sources.list.d/cran.list
-sudo apt update && sudo apt install -y r-base-core
-
+sudo apt update
 sudo apt install -y \
+r-base \
 libcurl4-openssl-dev \
 libssl-dev \
 libxml2-dev \
