@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=syndaemon -i 1.0 -t -K -R -d
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_US]=SynDaemon
+Name=SynDaemon
+Comment[en_US]=Disables touchpad functionality while typing
+Comment=Disables touchpad functionality while typing
