@@ -124,6 +124,22 @@ sudo chown root:root /usr/local/share/fonts/Cascadia -R
 sudo fc-cache -f
 
 
+# Install Mononoki Nerd Font
+mkdir ~/Downloads/Mononoki
+wget -qP ~/Downloads/Mononoki https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Mononoki/Regular/complete/mononoki-Regular%20Nerd%20Font%20Complete%20Mono.ttf --show-progress
+wget -qP ~/Downloads/Mononoki https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Mononoki/Regular/complete/mononoki-Regular%20Nerd%20Font%20Complete.ttf --show-progress
+wget -qP ~/Downloads/Mononoki https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Mononoki/Italic/complete/mononoki%20Italic%20Nerd%20Font%20Complete%20Mono.ttf --show-progress
+wget -qP ~/Downloads/Mononoki https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Mononoki/Italic/complete/mononoki%20Italic%20Nerd%20Font%20Complete.ttf --show-progress
+wget -qP ~/Downloads/Mononoki https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Mononoki/Bold/complete/mononoki%20Bold%20Nerd%20Font%20Complete%20Mono.ttf --show-progress
+wget -qP ~/Downloads/Mononoki https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Mononoki/Bold/complete/mononoki%20Bold%20Nerd%20Font%20Complete.ttf --show-progress
+wget -qP ~/Downloads/Mononoki https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Mononoki/Bold-Italic/complete/mononoki%20Bold%20Italic%20Nerd%20Font%20Complete%20Mono.ttf --show-progress
+wget -qP ~/Downloads/Mononoki https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Mononoki/Bold-Italic/complete/mononoki%20Bold%20Italic%20Nerd%20Font%20Complete.ttf --show-progress
+sudo mkdir /usr/local/share/fonts/Mononoki
+sudo cp ~/Downloads/Mononoki/* /usr/local/share/fonts/Mononoki/
+sudo chown root:root /usr/local/share/fonts/Mononoki -R
+sudo fc-cache -f
+
+
 # Download DEB files
 wget -q https://go.skype.com/skypeforlinux-64.deb -O ~/Downloads/skype.deb --show-progress
 wget -q https://download1.rstudio.org/desktop/bionic/amd64/rstudio-1.2.5019-amd64.deb -O ~/Downloads/rstudio.deb --show-progress
