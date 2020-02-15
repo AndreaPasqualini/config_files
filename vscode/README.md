@@ -9,6 +9,4 @@ The file assumes the following extensions are installed:
 - [Matlab formatter](https://marketplace.visualstudio.com/items?itemName=AffenWiesel.matlab-formatter)
 - [vscode-icons](https://marketplace.visualstudio.com/items?itemName=robertohuertasm.vscode-icons)
 - [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
-- [Ayu](https://marketplace.visualstudio.com/items?itemName=teabyii.ayu)
-- [Dank Neon](https://marketplace.visualstudio.com/items?itemName=wuz.dank-neon)
 - [Markdown PDF](https://marketplace.visualstudio.com/items?itemName=yzane.markdown-pdf)
