@@ -17,7 +17,7 @@ sudo ldconfig
 echo "MKL_THREADING_LAYER=GNU" | sudo tee -a /etc/environment
 
 # Install dependencies for R packages
-sudo install -y \
+sudo apt install -y \
 libcurl4-openssl-dev \
 libssl-dev \
 libxml2-dev \
