@@ -9,7 +9,7 @@ sudo apt upgrade -y
 sudo apt install -y neofetch tty-clock htop lolcat figlet toilet ranger vim curl wget build-essential git pdftk
 
 # Install GUI utilities
-sudo apt install -y baobab totem gnome-calculator usb-creator-gtk
+sudo apt install -y baobab totem gnome-tweaks chrome-gnome-shell usb-creator-gtk
 
 # Install Spotify
 curl -sS https://download.spotify.com/debian/pubkey_0D811D58.gpg | sudo apt-key add -
