@@ -1,12 +1,12 @@
 # Remove Snap system
-sudo autoremove -y snapd
+sudo apt autoremove -y snapd
 
 # Initial cleanup and update
 sudo apt update
 sudo apt upgrade -y
 
 # Install basic tooling
-sudo apt install -y man-db neofetch tty-clock htop lolcat figlet toilet ranger vim curl wget build-essential git pdftk
+sudo apt install -y neofetch tty-clock htop lolcat figlet toilet ranger vim curl wget build-essential git pdftk
 
 # Install GUI utilities
 sudo apt install -y baobab totem gnome-calculator usb-creator-gtk
@@ -14,7 +14,8 @@ sudo apt install -y baobab totem gnome-calculator usb-creator-gtk
 # Install Spotify
 curl -sS https://download.spotify.com/debian/pubkey_0D811D58.gpg | sudo apt-key add -
 echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
-sudo apt-get update && sudo apt-get install spotify-client
+sudo apt-get update
+sudo apt-get install -y spotify-client
 
 # Install LibreOffice
 sudo apt install -y libreoffice-writer libreoffice-calc libreoffice-gtk3
