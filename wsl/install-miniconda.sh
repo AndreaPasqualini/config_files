@@ -13,4 +13,5 @@ rm ~/Downloads/Miniconda3-latest-Linux-x86_64.sh
 
 # Update Miniconda's binaries and install packages
 /home/andrea/.miniconda3/bin/conda update --all
-/home/andrea/.miniconda3/bin/conda install numpy scipy pandas patsy statsmodels matplotlib seaborn ipython jupyterlab
+/home/andrea/.miniconda3/bin/conda install numpy scipy pandas patsy statsmodels matplotlib seaborn ipython jupyterlab pylint plotly
+/home/andrea/.miniconda3/bin/jupyter labextension install jupyterlab-plotly@4.12.0
