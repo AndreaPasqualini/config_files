@@ -6,3 +6,4 @@ ssc install reghdfe       // Fixed effects everywhere!!!
 ssc install estout        // Nice tables
 ssc install hhi5          // Compute market share concentration easily
 ssc install winsor        // Cut those tails now!
+ssc install binscatter    // Compute summarized scatterplots
