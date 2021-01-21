@@ -21,9 +21,9 @@ sudo apt install -y texlive-base texlive-latex-base texlive-latex-recommended te
 
 # Install Ruby system
 sudo apt install -y ruby ruby-dev
-echo '# Install Ruby Gems to ~/.gems' >> ~/.bashrc
-echo 'export GEM_HOME="$HOME/.gems"' >> ~/.bashrc
-echo 'export PATH="$HOME/.gems/bin:$PATH"' >> ~/.bashrc
+echo '# Install Ruby Gems to $HOME/.gems' >> $HOME/.bashrc
+echo 'export GEM_HOME="$HOME/.gems"' >> $HOME/.bashrc
+echo 'export PATH="$HOME/.gems/bin:$PATH"' >> $HOME/.bashrc
 
 # Fix (most) QT apps look
 sudo apt install -y qt5-gtk-platformtheme qt5-gtk2-platformtheme
@@ -35,7 +35,7 @@ echo 'export MOZ_USE_XINPUT2=1' | sudo tee -a /etc/profile.d/use-xinput2.sh
 # Install BpyTOP
 sudo apt install -y python3-pip
 pip install bpytop
-echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> $HOME/.bashrc
 
 # Download and install Cascadia Code (from GitHub)
 wget --directory-prefix=$HOME/Downloads https://github.com/microsoft/cascadia-code/releases/download/v2009.22/CascadiaCode-2009.22.zip --quiet --show-progress

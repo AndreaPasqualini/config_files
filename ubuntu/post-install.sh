@@ -25,9 +25,9 @@ sudo apt install -y texlive-base texlive-latex-base texlive-latex-recommended te
 
 # Install Ruby system
 sudo apt install -y ruby ruby-dev
-echo '# Install Ruby Gems to ~/.gems' >> ~/.bashrc
-echo 'export GEM_HOME="$HOME/.gems"' >> ~/.bashrc
-echo 'export PATH="$HOME/.gems/bin:$PATH"' >> ~/.bashrc
+echo '# Install Ruby Gems to $HOME/.gems' >> $HOME/.bashrc
+echo 'export GEM_HOME="$HOME/.gems"' >> $HOME/.bashrc
+echo 'export PATH="$HOME/.gems/bin:$PATH"' >> $HOME/.bashrc
 
 # Fix (most) QT apps look
 sudo apt install -y qt5-gtk2-platformtheme
