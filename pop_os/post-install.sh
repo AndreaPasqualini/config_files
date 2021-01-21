@@ -53,3 +53,5 @@ sudo mkdir /usr/share/fonts/truetype/JetBrainsMono
 sudo cp $HOME/Downloads/JetBrainsMono/fonts/ttf/*.ttf /usr/share/fonts/truetype/JetBrainsMono
 rm $HOME/Downloads/JetBrainsMono -rf
 
+# Update fontconfig's cache
+sudo fc-cache -fv
