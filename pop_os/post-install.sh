@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Initial cleanup and update
 sudo apt update
 sudo apt upgrade -y
