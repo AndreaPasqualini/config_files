@@ -36,9 +36,9 @@ pip install bpytop
 echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
 
 # Download and install Cascadia Code (from GitHub)
-wget --directory-prefix="~/Downloads" https://github.com/microsoft/cascadia-code/releases/download/v2009.22/CascadiaCode-2009.22.zip --show-progress
-mkdir ~/Downloads/Cascadia
-unzip ~/Downloads/CascadiaCode-2009.22.zip -d ~/Downloads/Cascadia
+wget --directory-prefix=$HOME/Downloads https://github.com/microsoft/cascadia-code/releases/download/v2009.22/CascadiaCode-2009.22.zip --quiet --show-progress
+mkdir $HOME/Downloads/Cascadia
+unzip $HOME/Downloads/CascadiaCode-2009.22.zip -d $HOME/Downloads/Cascadia
 sudo mkdir /usr/share/fonts/truetype/Cascadia
-sudo cp ~/Downloads/Cascadia/ttf/static/*.ttf /usr/share/fonts/truetype/Cascadia
-rm ~/Downloads/Cascadia -rf
+sudo cp $HOME/Downloads/Cascadia/ttf/static/*.ttf /usr/share/fonts/truetype/Cascadia
+rm $HOME/Downloads/Cascadia -rf
