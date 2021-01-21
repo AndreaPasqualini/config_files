@@ -2,11 +2,14 @@
 sudo apt update
 sudo apt upgrade -y
 
+# Remove unwanted character map app
+sudo apt autoremove --purge gucharmap -y
+
 # Install basic tooling
 sudo apt install -y neofetch tty-clock htop lolcat figlet toilet ranger vim curl wget build-essential git pdftk
 
 # Install GUI apps
-sudo apt install -y gnome-tweaks chrome-gnome-shell transmission-gtk xournal code
+sudo apt install -y gnome-tweaks gnome-characters chrome-gnome-shell transmission-gtk xournal code
 
 # Install Spotify (flatpak)
 flatpak install --assumeyes flathub com.spotify.Client
@@ -39,4 +42,3 @@ unzip ~/Downloads/CascadiaCode-2009.22.zip -d ~/Downloads/Cascadia
 sudo mkdir /usr/share/fonts/truetype/Cascadia
 sudo cp ~/Downloads/Cascadia/ttf/static/*.ttf /usr/share/fonts/truetype/Cascadia
 rm ~/Downloads/Cascadia -rf
-
