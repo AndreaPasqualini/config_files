@@ -44,3 +44,12 @@ unzip $HOME/Downloads/CascadiaCode-2009.22.zip -d $HOME/Downloads/Cascadia
 sudo mkdir /usr/share/fonts/truetype/Cascadia
 sudo cp $HOME/Downloads/Cascadia/ttf/static/*.ttf /usr/share/fonts/truetype/Cascadia
 rm $HOME/Downloads/Cascadia -rf
+
+# Download and install JetBrains Mono
+wget --directory-prefix=$HOME/Downloads https://download.jetbrains.com/fonts/JetBrainsMono-2.221.zip --quiet --show-progress
+mkdir $HOME/Downloads/JetBrainsMono
+unzip $HOME/Downloads/JetBrainsMono-2.221.zip -d $HOME/Downloads/JetBrainsMono
+sudo mkdir /usr/share/fonts/truetype/JetBrainsMono
+sudo cp $HOME/Downloads/JetBrainsMono/fonts/ttf/*.ttf /usr/share/fonts/truetype/JetBrainsMono
+rm $HOME/Downloads/JetBrainsMono -rf
+
