@@ -13,6 +13,10 @@ sudo apt install -y neofetch tty-clock htop lolcat figlet toilet ranger vim curl
 # Install GUI apps
 sudo apt install -y gnome-tweaks gnome-characters chrome-gnome-shell transmission-gtk xournal code
 
+# Replace Geary with Evolution (with support for Exchange accounts)
+sudo apt autoremove --purge geary
+sudo apt install evolution evolution-ews
+
 # Install Spotify (flatpak)
 flatpak install --assumeyes flathub com.spotify.Client
 
