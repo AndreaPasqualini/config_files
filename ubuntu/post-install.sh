@@ -32,3 +32,6 @@ echo 'export PATH="$HOME/.gems/bin:$PATH"' >> $HOME/.bashrc
 # Fix (most) QT apps look
 sudo apt install -y qt5-gtk2-platformtheme
 echo 'QT_QPA_PLATFORMTHEME=gtk2' | sudo tee -a /etc/environment
+
+# Make Firefox use XInput for scrolling consistency
+echo 'export MOZ_USE_XINPUT2=1' | sudo tee /etc/profile.d/use-xinput2.sh
