@@ -23,9 +23,10 @@ gsettings set org.gnome.Terminal.Legacy.Settings theme-variant "'dark'"
 gsettings set org.gnome.desktop.interface clock-show-weekday true
 gsettings set org.gnome.desktop.interface cursor-size "32"
 gsettings set org.gnome.desktop.interface gtk-theme "'Yaru-light'"
-gsettings set org.gnome.desktop.interface font-name "'Ubuntu 10'"
-gsettings set org.gnome.desktop.interface monospace-font-name "'Ubuntu Mono 12'"
-gsettings set org.gnome.desktop.wm.preferences titlebar-font "'Ubuntu Bold 10'"
+gsettings set org.gnome.desktop.interface font-name "'Liberation Sans 10'"
+gsettings set org.gnome.desktop.interface document-font-name "'Liberation Serif 11'"
+gsettings set org.gnome.desktop.interface monospace-font-name "'Liberation Mono 10'"
+gsettings set org.gnome.desktop.wm.preferences titlebar-font "'Liberation Sans Bold 10'"
 gsettings set org.gnome.desktop.interface show-battery-percentage true
 gsettings set org.gnome.desktop.interface text-scaling-factor "1.35"
 
