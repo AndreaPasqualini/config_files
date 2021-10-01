@@ -12,6 +12,29 @@ Within WSL, a Ubuntu LTS release is expected.
 At the time of writing, it is Ubuntu 20.40 "Focal Fossa".
 
 
+# What this repository does
+
+This repository sets up a WSL environment in Windows 10.
+Ubuntu LTS is expected to be installed.
+It does not matter whether WSL is version 1 or 2.
+
+The tasks performed, broadly speaking, are:
+- Install packages from Ubuntu's repositories (e.g., CLI utilities, LaTeX packages, special config in `~/.bashrc`);
+- Install miniconda and related packages (e.g., numpy, pandas, matplotlib, jupyter);
+- Install the most recent version of R from CRAN repositories, and make it use MKL libraries;
+- Install Stata and related packages; and
+- Install extensions and store settings for Visual Studio Code.
+
+
+# My setup
+
+I run LaTeX, Python, R, Stata and (soon) Julia in my WSL environment in Windows.
+Unfortunately, at the time of writing it is not possible to easily install MATLAB in WSL.
+I have tried installing the regular version of MATLAB but it complained that a display did not exist (fair enough).
+It is not possible to run a command-line only version of MATLAB (but I did not yet try to install the MATLAB Production Server).
+Therefore, I install MATLAB in Windows and hope not to ever need it.
+
+
 ## Notes on executing scripts
 
 A responsibility waiver is in the [License file](./LICENSE).
