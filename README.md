@@ -5,14 +5,14 @@ The goal is to automatize the installation of apps and configuration of the syst
 Ideally, I'd let the machine run these and I'd be up and running in 20 minutes (depending on the speed of the internet connection).
 
 
-# OS configuration
+## OS configuration
 
 This repository assumes a Windows 10 platform with WSL installed.
 Within WSL, a Ubuntu LTS release is expected.
 At the time of writing, it is Ubuntu 20.40 "Focal Fossa".
 
 
-# What this repository does
+## What this repository does
 
 This repository sets up a WSL environment in Windows 10.
 Ubuntu LTS is expected to be installed.
@@ -26,7 +26,7 @@ The tasks performed, broadly speaking, are:
 - Install extensions and store settings for Visual Studio Code.
 
 
-# My setup
+## My setup
 
 I run LaTeX, Python, R, Stata and (soon) Julia in my WSL environment in Windows.
 Unfortunately, at the time of writing it is not possible to easily install MATLAB in WSL.
