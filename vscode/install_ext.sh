@@ -1,5 +1,6 @@
 #!/bin/bash
 
+code --install-extension tinkertrain.theme-panda
 code --install-extension github.github-vscode-theme
 code --install-extension vscode-icons-team.vscode-icons
 code --install-extension kylebarron.stata-enhanced
