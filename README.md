@@ -5,6 +5,13 @@ The goal is to automatize the installation of apps and configuration of the syst
 Ideally, I'd let the machine run these and I'd be up and running in 20 minutes (depending on the speed of the internet connection).
 
 
+# OS configuration
+
+This repository assumes a Windows 10 platform with WSL installed.
+Within WSL, a Ubuntu LTS release is expected.
+At the time of writing, it is Ubuntu 20.40 "Focal Fossa".
+
+
 ## Notes on executing scripts
 
 A responsibility waiver is in the [License file](./LICENSE).
