@@ -1,0 +1,12 @@
+set number
+set ruler
+set smartcase
+set hlsearch
+set incsearch
+set lazyredraw
+set showmatch
+syntax enable
+set expandtab
+set smarttab
+set shiftwidth=4
+set tabstop=4

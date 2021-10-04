@@ -1,99 +1,85 @@
 {
-  "telemetry.enableTelemetry": false,
-  "workbench.iconTheme": "vscode-icons",
-  "window.zoomLevel": 0,
-  "editor.fontFamily": "'Cascadia Code', 'Iosevka', 'Fira Code', 'Noto Mono', monospace",
-  "workbench.startupEditor": "none",
-  "editor.wordWrap": "wordWrapColumn",
-  "editor.fontLigatures": true,
-  "editor.rulers": [81],
-  "files.trimTrailingWhitespace": true,
-  "files.insertFinalNewline": true,
-  "workbench.settings.editor": "ui",
-  "explorer.sortOrder": "type",
-  "files.associations": {"*.m": "matlab"},
-  "matlab.matlabpath": "C:/Program Files/MATLAB/R2019a/bin/matlab.exe",
-  "matlab.mlintpath": "C:/Program Files/MATLAB/R2019a/bin/win64/mlint.exe",
-  "matlab-formatter.indentwidth": 2,
-  "[markdown]": {
-      "editor.wordWrap": "wordWrapColumn",
-      "editor.quickSuggestions": false
-  },
-  "[html]": {
-      "editor.tabSize": 2,
-      "editor.insertSpaces": true
-  },
-  "[latex]": {
-      "editor.tabSize": 2,
-      "editor.insertSpaces": true
-  },
-  "[matlab]": {
-      "editor.tabSize": 2,
-      "editor.insertSpaces": true,
-      "editor.wordWrap": "off"
-  },
-  "[javascript]": {
-      "editor.tabSize": 2,
-      "editor.insertSpaces": true
-  },
-  "latex-workshop.latex.autoBuild.run": "never",
-  "latex-workshop.latex.clean.fileTypes": [
-  "*.aux",
-  "*.bbl",
-  "*.blg",
-  "*.idx",
-  "*.ind",
-  "*.lof",
-  "*.lot",
-  "*.out",
-  "*.toc",
-  "*.acn",
-  "*.acr",
-  "*.alg",
-  "*.glg",
-  "*.glo",
-  "*.gls",
-  "*.ist",
-  "*.fls",
-  "*.log",
-  "*.fdb_latexmk",
-  "*.synctex.gz",
-  "*.nav",
-  "*.snm"
-  ],
-  "latex-workshop.latex.recipes": [{
-      "name": "texify",
-      "tools": [
-      "texify"
-      ]
-  }],
-  "latex-workshop.latex.tools": [{
-      "name": "texify",
-      "command": "texify",
-      "args": [
-      "--synctex",
-      "--pdf",
-      "--tex-option=\"-interaction=nonstopmode\"",
-      "--tex-option=\"-file-line-error\"",
-      "%DOC%.tex"
-      ],
-      "env": {}
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
+    "window.titleBarStyle": "custom",
+    "workbench.colorTheme": "GitHub Light",
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.startupEditor": "none",
+    "workbench.settings.editor": "ui",
+    "workbench.list.horizontalScrolling": true,
+    "explorer.sortOrder": "type",
+    "files.associations": {"*.m": "matlab"},
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "diffEditor.ignoreTrimWhitespace": true,
+    "editor.fontFamily": "Consolas, 'Cascadia Mono', monospace",
+    "editor.fontSize": 13,
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.fontLigatures": true,
+    "editor.rulers": [80],
+    "editor.renderLineHighlight": "none",
+    "editor.multiCursorModifier": "alt",
+    "editor.renderWhitespace": "selection",
+    "editor.minimap.maxColumn": 80,
+    "editor.mouseWheelScrollSensitivity": 2,
+    "matlab.matlabpath": "C:/Program Files/MATLAB/R2020a/bin/matlab.exe",
+    "matlab.mlintpath": "C:/Program Files/MATLAB/R2020a/bin/win64/mlint.exe",
+    "matlab-formatter.indentwidth": 2,
+    "[markdown]": {
+        "editor.wordWrap": "wordWrapColumn",
+        "editor.quickSuggestions": false
+    },
+    "[html]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true
+    },
+    "[latex]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
+        "editor.rulers": [],
+        "editor.wordWrap": "on"
+    },
+    "[matlab]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
+        "editor.wordWrap": "off"
+    },
+    "[javascript]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true
+    },
+    "latex-workshop.latex.autoBuild.run": "never",
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.latex.clean.fileTypes": [
+        "*.aux",
+        "*.bbl",
+        "*.blg",
+        "*.idx",
+        "*.ind",
+        "*.lof",
+        "*.lot",
+        "*.out",
+        "*.toc",
+        "*.acn",
+        "*.acr",
+        "*.alg",
+        "*.glg",
+        "*.glo",
+        "*.gls",
+        "*.ist",
+        "*.fls",
+        "*.log",
+        "*.fdb_latexmk",
+        "*.synctex.gz",
+        "*.nav",
+        "*.snm"
+    ],
+    "markdown.extension.italic.indicator": "_",
+    "overtype.paste": true,
+    "csv-preview.numberFormat": "g4",
+    "markdown.extension.orderedList.marker": "one",
+    "git.autofetch": true,
+    "python.showStartPage": false,
+    "python.dataScience.askForKernelRestart": false,
+    "clock.datetimeFormat": "H:mm",
   }
-  ],
-  "markdown.extension.italic.indicator": "_",
-  "overtype.paste": true,
-  "latex-workshop.view.pdf.viewer": "tab",
-  "editor.renderLineHighlight": "none",
-  "r.rterm.windows": "C:\\Program Files\\Microsoft\\R Open\\R-3.5.3\\bin\\x64\\R.exe",
-  "workbench.list.horizontalScrolling": true,
-  "csv-preview.numberFormat": "g4",
-  "diffEditor.ignoreTrimWhitespace": true,
-  "git.autofetch": true,
-  "editor.multiCursorModifier": "alt",
-  "markdown.extension.orderedList.marker": "one",
-  "editor.renderWhitespace": "selection",
-  "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\wsl.exe",
-  "terminal.integrated.fontFamily": "DelugiaCode NF",
-  "editor.minimap.maxColumn": 80,
-  "editor.fontSize": 13
-}
