@@ -50,5 +50,3 @@ Pull Requests are welcome!
 
 Thanks to [@eddelbuettel](https://github.com/eddelbuettel) for [his script](https://github.com/eddelbuettel/mkl4deb/blob/master/script.sh) to install Intel's MKL on deb-based systems.
 My version differs from his just for the update to the specific MKL version I want to download.
-
-The file [`matlab.ico`](./matlab/matlab.ico) is property of [The Mathworks Inc](https://www.mathworks.com/).
