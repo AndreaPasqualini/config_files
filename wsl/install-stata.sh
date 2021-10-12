@@ -11,3 +11,7 @@ cd -
 
 # Install required dependency
 sudo apt install -y libtinfo5
+
+# Create a symbolic link for stata's executable
+#   --> assuming that /usr/local/bin is in the PATH env variable
+sudo ln -s /usr/local/Stata16/stata-se /usr/local/bin/stata
