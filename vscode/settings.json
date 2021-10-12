@@ -1,8 +1,7 @@
 {
-    "telemetry.enableTelemetry": false,
-    "telemetry.enableCrashReporter": false,
+    "telemetry.telemetryLevel": "off",
     "window.titleBarStyle": "custom",
-    "workbench.colorTheme": "GitHub Light",
+    "workbench.colorTheme": "Panda Syntax",
     "workbench.iconTheme": "vscode-icons",
     "workbench.startupEditor": "none",
     "workbench.settings.editor": "ui",
@@ -12,22 +11,24 @@
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
     "diffEditor.ignoreTrimWhitespace": true,
-    "editor.fontFamily": "Consolas, 'Cascadia Mono', monospace",
-    "editor.fontSize": 13,
-    "editor.wordWrap": "wordWrapColumn",
+    "editor.fontFamily": "'Cascadia Code', monospace",
+    "editor.fontSize": 14,
+    "editor.fontWeight": "350",
+    "editor.wordWrap": "on",
     "editor.fontLigatures": true,
-    "editor.rulers": [80],
+    "editor.rulers": [],
     "editor.renderLineHighlight": "none",
     "editor.multiCursorModifier": "alt",
     "editor.renderWhitespace": "selection",
     "editor.minimap.maxColumn": 80,
     "editor.mouseWheelScrollSensitivity": 2,
-    "matlab.matlabpath": "C:/Program Files/MATLAB/R2020a/bin/matlab.exe",
-    "matlab.mlintpath": "C:/Program Files/MATLAB/R2020a/bin/win64/mlint.exe",
+    "terminal.integrated.fontFamily": "'Cascadia Mono PL'",
+    "terminal.integrated.fontWeight": "350",
+    "matlab.matlabpath": "C:/Program Files/MATLAB/R2021b/bin/matlab.exe",
+    "matlab.mlintpath": "C:/Program Files/MATLAB/R2021b/bin/win64/mlint.exe",
     "matlab-formatter.indentwidth": 2,
     "[markdown]": {
-        "editor.wordWrap": "wordWrapColumn",
-        "editor.quickSuggestions": false
+        "editor.quickSuggestions": false,
     },
     "[html]": {
         "editor.tabSize": 2,
@@ -36,13 +37,24 @@
     "[latex]": {
         "editor.tabSize": 2,
         "editor.insertSpaces": true,
-        "editor.rulers": [],
-        "editor.wordWrap": "on"
+        "editor.fontLigatures": false
     },
     "[matlab]": {
         "editor.tabSize": 2,
         "editor.insertSpaces": true,
-        "editor.wordWrap": "off"
+        "editor.rulers": [80],
+        "editor.wordWrap": "wordWrapColumn",
+        "editor.wordWrapColumn": 80
+    },
+    "[python]": {
+        "editor.wordBasedSuggestions": false,
+        "editor.rulers": [80],
+        "editor.wordWrap": "wordWrapColumn",
+        "editor.wordWrapColumn": 80
+    },
+    "[stata]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
     },
     "[javascript]": {
         "editor.tabSize": 2,
@@ -79,7 +91,8 @@
     "csv-preview.numberFormat": "g4",
     "markdown.extension.orderedList.marker": "one",
     "git.autofetch": true,
-    "python.showStartPage": false,
-    "python.dataScience.askForKernelRestart": false,
     "clock.datetimeFormat": "H:mm",
+    "jupyter.askForKernelRestart": false,
+    "markdown.preview.fontSize": 15,
+    "git.confirmSync": false
   }
