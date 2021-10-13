@@ -8,3 +8,7 @@ else if c(os)=="Unix" {
   sysdir set PERSONAL "/home/andrea/.ado/personal"
   sysdir set OLDPLACE "/home/andrea/.ado"
 }
+
+if c(mode) == "batch" {
+  set linesize 255
+}
