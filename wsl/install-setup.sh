@@ -19,3 +19,13 @@ sudo apt autoremove -y w3m
 
 # Make WSL aware of Windows' browser
 echo 'export BROWSER="/mnt/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe"' >> $HOME/.bashrc
+
+# Install Ruby, with Bundler and Jekyll
+sudo apt install -y \
+ruby \
+ruby-dev
+echo '# Install Ruby Gems to ~/.gems' >> ~/.bashrc
+echo 'export GEM_HOME="$HOME/.gems"' >> ~/.bashrc
+echo 'export PATH="$HOME/.gems/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
+gem install bundler jekyll
