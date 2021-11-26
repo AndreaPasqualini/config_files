@@ -6,6 +6,7 @@ winget install --id ChristianSchenk.MiKTeX --exact --source winget
 winget install --id Dropbox.Dropbox --exact --source winget
 winget install --id GitHub.GitHubDesktop --exact --source winget
 winget install --id 9NHL4NSC67WM --exact --source msstore  # JackieLiu.NotepadsApp
+winget install --id Microsoft.PowerToys --exact --source winget
 winget install --id Microsoft.ROpen --exact --source winget
 winget install --id Microsoft.Skype --exact --source winget
 winget install --id Microsoft.Teams --exact --source winget
