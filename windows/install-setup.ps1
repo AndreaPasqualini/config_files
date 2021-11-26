@@ -21,5 +21,6 @@ winget install --id Telegram.TelegramDesktop --exact --source winget
 winget install --id TeXstudio.TeXstudio --exact --source winget
 winget install --id Transmission.Transmission --exact --source winget
 winget install --id Valve.Steam --exact --source winget
+winget install --id VideoLAN.VLC --exact --source winget --interactive
 winget install --id WhatsApp.WhatsApp --exact --source winget
 winget install --id Zoom.Zoom --exact --source winget
