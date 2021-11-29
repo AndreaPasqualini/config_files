@@ -28,7 +28,7 @@
     "matlab.mlintpath": "C:/Program Files/MATLAB/R2021b/bin/win64/mlint.exe",
     "matlab-formatter.indentwidth": 2,
     "[markdown]": {
-        "editor.quickSuggestions": false,
+        "editor.quickSuggestions": false
     },
     "[html]": {
         "editor.tabSize": 2,
@@ -54,7 +54,7 @@
     },
     "[stata]": {
         "editor.tabSize": 2,
-        "editor.insertSpaces": true,
+        "editor.insertSpaces": true
     },
     "[javascript]": {
         "editor.tabSize": 2,
