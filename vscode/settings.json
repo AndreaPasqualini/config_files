@@ -112,5 +112,6 @@
     "clock.datetimeFormat": "H:mm",
     "jupyter.askForKernelRestart": false,
     "markdown.preview.fontSize": 15,
-    "git.confirmSync": false
+    "git.confirmSync": false,
+    "spellright.notificationClass": "warning"
   }
