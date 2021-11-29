@@ -86,6 +86,24 @@
         "*.nav",
         "*.snm"
     ],
+    "latex-workshop.latex.recipes": [{
+        "name": "texify",
+        "tools": [
+          "texify"
+        ]
+    }],
+    "latex-workshop.latex.tools": [{
+        "name": "texify",
+        "command": "texify",
+        "args": [
+            "--synctex",
+            "--pdf",
+            "--tex-option=\"-interaction=nonstopmode\"",
+            "--tex-option=\"-file-line-error\"",
+            "%DOC_EXT%"
+        ],
+        "env": {}
+    }],
     "markdown.extension.italic.indicator": "_",
     "overtype.paste": true,
     "csv-preview.numberFormat": "g4",
