@@ -1,6 +1,7 @@
 // Install user-contributed packages I use
 
-ssc install blindschemes  // A nice color scheme I love
+ssc install fs            // Listing files in a directory, with `r(files)'
+ssc install blindschemes  // A nice set of color schemes I love
 ssc install ftools        // Dependency for 'reghdfe'
 ssc install reghdfe       // Fixed effects everywhere!!!
 ssc install estout        // Nice tables
