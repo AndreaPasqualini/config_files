@@ -14,7 +14,9 @@ libudunits2-dev \
 libgdal-dev
 
 # Register CRAN's repository
-echo "deb https://cloud.r-project.org/bin/linux/debian buster-cran40/" | sudo tee /etc/apt/sources.list.d/cran.list
-sudo apt-key adv --keyserver keys.gnupg.net --recv-keys E19F5F87128899B192B1A2C2AD5F960A256A04AF
+sudo apt update -qq
+sudo apt install --no-install-recommends software-properties-common dirmngr
+wget -qO- https://cloud.r-project.org/bin/linux/ubuntu/marutter_pubkey.asc | sudo tee -a /etc/apt/trusted.gpg.d/cran_ubuntu_key.asc
+sudo add-apt-repository "deb https://cloud.r-project.org/bin/linux/ubuntu $(lsb_release -cs)-cran40/"
 sudo apt update
 sudo apt install -y r-base r-base-dev
