@@ -9,7 +9,7 @@ sudo apt update
 sudo apt upgrade -y
 
 # Install basic tooling
-sudo apt install -y neofetch tty-clock htop lolcat figlet toilet ranger vim curl wget build-essential git pdftk tldr
+sudo apt install -y neofetch tty-clock htop lolcat figlet toilet ranger vim curl wget build-essential git pdftk tldr powerline powerline-gitstatus
 
 # Install TeXlive system
 sudo apt install -y texlive-base texlive-latex-base texlive-latex-recommended texlive-latex-extra texlive-xetex texlive-bibtex-extra texlive-fonts-recommended texlive-fonts-extra texlive-lang-english texlive-lang-italian texlive-pictures texlive-science texlive-pstricks latexmk dvipng biber
@@ -19,6 +19,21 @@ sudo apt autoremove -y w3m
 
 # Make WSL aware of Windows' browser
 echo 'export BROWSER="/mnt/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe"' >> $HOME/.bashrc
+
+# Make Bash use Powerline
+echo '# Make Bash use Powerline' >> ~/.bashrc
+echo 'if [ -f /usr/share/powerline/bindings/bash/powerline.sh ]; then' >> ~/.bashrc
+echo '  powerline-daemon -q' >> ~/.bashrc
+echo '  POWERLINE_BASH_CONTINUATION=1' >> ~/.bashrc
+echo '  POWERLINE_BASH_SELECT=1' >> ~/.bashrc
+echo '  source /usr/share/powerline/bindings/bash/powerline.sh' >> ~/.bashrc
+echo 'fi' >> ~/.bashrc
+
+# Make vim use Powerline
+echo 'python3 from powerline.vim import setup as powerline_setup' >> ~/.vimrc
+echo 'python3 powerline_setup()' >> ~/.vimrc
+echo 'python3 del powerline_setup' >> ~/.vimrc
+echo 'set laststatus=2' >> ~/.vimrc
 
 # Install Ruby, with Bundler and Jekyll
 sudo apt install -y \
