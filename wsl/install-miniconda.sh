@@ -16,7 +16,7 @@ $HOME/.miniconda3/bin/conda update --all
 $HOME/.miniconda3/bin/conda install numpy scipy pandas patsy statsmodels matplotlib seaborn ipython jupyterlab pylint plotly
 
 # Generate the configuration file for the Jupyter server
-$HOME/.miniconda/bin/jupyter notebook --generate-config
+$HOME/.miniconda3/bin/jupyter notebook --generate-config
 
 echo ''
 echo 'Go to the location of the configuration file and search for the following'
