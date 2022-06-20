@@ -9,10 +9,10 @@ sudo apt update
 sudo apt upgrade -y
 
 # Install basic tooling
-sudo apt install -y man-db neofetch tty-clock htop lolcat figlet toilet ranger vim curl wget build-essential git pdftk npm tldr
+sudo apt install -y neofetch tty-clock htop lolcat figlet toilet ranger vim curl wget build-essential git pdftk tldr
 
 # Install TeXlive system
-sudo apt install -y texlive-base texlive-latex-base texlive-latex-recommended texlive-latex-extra texlive-xetex texlive-bibtex-extra texlive-fonts-recommended texlive-fonts-extra texlive-lang-english texlive-lang-italian texlive-pictures texlive-science texlive-pstricks latexmk dvipng
+sudo apt install -y texlive-base texlive-latex-base texlive-latex-recommended texlive-latex-extra texlive-xetex texlive-bibtex-extra texlive-fonts-recommended texlive-fonts-extra texlive-lang-english texlive-lang-italian texlive-pictures texlive-science texlive-pstricks latexmk dvipng biber
 
 # For some reason, w3m was installed by the previous commands, removing it now
 sudo apt autoremove -y w3m
@@ -27,5 +27,6 @@ ruby-dev
 echo '# Install Ruby Gems to ~/.gems' >> ~/.bashrc
 echo 'export GEM_HOME="$HOME/.gems"' >> ~/.bashrc
 echo 'export PATH="$HOME/.gems/bin:$PATH"' >> ~/.bashrc
-source ~/.bashrc
-gem install bundler jekyll
+
+echo 'Reload the configuration for Bash with "source ~/.bashrc"'
+echo 'Then install Bundler and Jekyll with "gem install bundler jekyll"'
