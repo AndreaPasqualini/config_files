@@ -20,3 +20,7 @@ wget -qO- https://cloud.r-project.org/bin/linux/ubuntu/marutter_pubkey.asc | sud
 sudo add-apt-repository "deb https://cloud.r-project.org/bin/linux/ubuntu $(lsb_release -cs)-cran40/"
 sudo apt update
 sudo apt install -y r-base r-base-dev
+
+# Install radian
+sudo apt install -y python3-pip
+sudo pip3 install radian
