@@ -13,6 +13,7 @@ rm $HOME/Downloads/Miniconda3-latest-Linux-x86_64.sh
 
 # Update Miniconda's binaries and install packages
 $HOME/.miniconda3/bin/conda update --all
+$HOME/.miniconda3/bin/conda install python=3.8
 $HOME/.miniconda3/bin/conda install numpy scipy pandas patsy statsmodels matplotlib seaborn ipython jupyterlab pylint plotly
 
 # Generate the configuration file for the Jupyter server
