@@ -24,9 +24,6 @@
     "editor.mouseWheelScrollSensitivity": 2,
     "terminal.integrated.fontFamily": "'Cascadia Mono PL'",
     "terminal.integrated.fontWeight": "350",
-    "matlab.matlabpath": "C:/Program Files/MATLAB/R2021b/bin/matlab.exe",
-    "matlab.mlintpath": "C:/Program Files/MATLAB/R2021b/bin/win64/mlint.exe",
-    "matlab-formatter.indentwidth": 2,
     "[markdown]": {
         "editor.quickSuggestions": false
     },
@@ -38,13 +35,6 @@
         "editor.tabSize": 2,
         "editor.insertSpaces": true,
         "editor.fontLigatures": false
-    },
-    "[matlab]": {
-        "editor.tabSize": 2,
-        "editor.insertSpaces": true,
-        "editor.rulers": [80],
-        "editor.wordWrap": "wordWrapColumn",
-        "editor.wordWrapColumn": 80
     },
     "[python]": {
         "editor.wordBasedSuggestions": false,
