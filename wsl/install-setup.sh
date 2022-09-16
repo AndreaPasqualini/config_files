@@ -18,7 +18,9 @@ sudo apt install -y --no-install-recommends texlive-base texlive-latex-base texl
 sudo apt autoremove -y w3m
 
 # Make WSL aware of Windows' browser
+echo "# Make WSL aware of Windows' browser" >> $HOME/.bashrc
 echo 'export BROWSER="/mnt/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe"' >> $HOME/.bashrc
+echo '' >> $HOME/.bashrc
 
 # Make Bash use Powerline
 echo '# Make Bash use Powerline' >> ~/.bashrc
