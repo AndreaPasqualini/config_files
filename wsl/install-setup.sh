@@ -30,12 +30,14 @@ echo '  POWERLINE_BASH_CONTINUATION=1' >> ~/.bashrc
 echo '  POWERLINE_BASH_SELECT=1' >> ~/.bashrc
 echo '  source /usr/share/powerline/bindings/bash/powerline.sh' >> ~/.bashrc
 echo 'fi' >> ~/.bashrc
+echo '' >> $HOME/.bashrc
 
 # Make vim use Powerline
 echo 'python3 from powerline.vim import setup as powerline_setup' >> ~/.vimrc
 echo 'python3 powerline_setup()' >> ~/.vimrc
 echo 'python3 del powerline_setup' >> ~/.vimrc
 echo 'set laststatus=2' >> ~/.vimrc
+echo '' >> $HOME/.vimrc
 
 # Install Ruby, with Bundler and Jekyll
 sudo apt install -y \
@@ -44,6 +46,7 @@ ruby-dev
 echo '# Install Ruby Gems to ~/.gems' >> ~/.bashrc
 echo 'export GEM_HOME="$HOME/.gems"' >> ~/.bashrc
 echo 'export PATH="$HOME/.gems/bin:$PATH"' >> ~/.bashrc
+echo '' >> $HOME/.bashrc
 
 echo 'Reload the configuration for Bash with "source ~/.bashrc"'
 echo 'Then install Bundler and Jekyll with "gem install bundler jekyll"'
