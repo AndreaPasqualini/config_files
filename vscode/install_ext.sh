@@ -7,6 +7,6 @@ code --install-extension grapecity.gc-excelviewer
 code --install-extension yzhang.markdown-all-in-one
 code --install-extension adammaras.overtype
 code --install-extension ms-python.python
-code --install-extension ikuyadeu.r
+code --install-extension reditorsupport.r
 code --install-extension james-yu.latex-workshop
 code --install-extension yahya-gilany.vscode-clock
