@@ -12,3 +12,7 @@ code --install-extension reditorsupport.r
 code --install-extension james-yu.latex-workshop
 code --install-extension yahya-gilany.vscode-clock
 code --install-extension ban.spellright
+
+# Allow ban.spellright to see system dictionaries
+mkdir -p $HOME/.config/Code/Dictionaries
+ln -s /usr/share/hunspell/* $HOME/.config/Code/Dictionaries
