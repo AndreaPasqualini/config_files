@@ -1,0 +1,4 @@
+[wsl2]
+processors=8           # Number of virtual processors on VM
+memory=16GB            # Max RAM available to VM
+guiApplications=false  # Disables WSLg (only works on Windows 11)
