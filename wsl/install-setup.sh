@@ -9,10 +9,10 @@ sudo apt update
 sudo apt upgrade -y
 
 # Install basic tooling
-sudo apt install -y neofetch tty-clock htop lolcat figlet toilet ranger vim curl wget build-essential git pdftk tldr powerline powerline-gitstatus
+sudo apt install -y --no-install-recommends neofetch tty-clock htop lolcat figlet toilet ranger vim curl wget build-essential git pdftk tldr powerline powerline-gitstatus
 
 # Install TeXlive system
-sudo apt install -y texlive-base texlive-latex-base texlive-latex-recommended texlive-latex-extra texlive-xetex texlive-bibtex-extra texlive-fonts-recommended texlive-fonts-extra texlive-lang-english texlive-lang-italian texlive-pictures texlive-science texlive-pstricks latexmk dvipng biber
+sudo apt install -y --no-install-recommends texlive-base texlive-latex-base texlive-latex-recommended texlive-latex-extra texlive-xetex texlive-bibtex-extra texlive-fonts-recommended texlive-fonts-extra texlive-lang-english texlive-lang-italian texlive-pictures texlive-science texlive-pstricks latexmk dvipng biber
 
 # For some reason, w3m was installed by the previous commands, removing it now
 sudo apt autoremove -y w3m
