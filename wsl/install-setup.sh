@@ -23,29 +23,29 @@ echo 'export BROWSER="/mnt/c/Program Files (x86)/Microsoft/Edge/Application/msed
 echo '' >> $HOME/.bashrc
 
 # Make Bash use Powerline
-echo '# Make Bash use Powerline' >> ~/.bashrc
-echo 'if [ -f /usr/share/powerline/bindings/bash/powerline.sh ]; then' >> ~/.bashrc
-echo '  powerline-daemon -q' >> ~/.bashrc
-echo '  POWERLINE_BASH_CONTINUATION=1' >> ~/.bashrc
-echo '  POWERLINE_BASH_SELECT=1' >> ~/.bashrc
-echo '  source /usr/share/powerline/bindings/bash/powerline.sh' >> ~/.bashrc
-echo 'fi' >> ~/.bashrc
+echo '# Make Bash use Powerline' >> $HOME/.bashrc
+echo 'if [ -f /usr/share/powerline/bindings/bash/powerline.sh ]; then' >> $HOME/.bashrc
+echo '  powerline-daemon -q' >> $HOME/.bashrc
+echo '  POWERLINE_BASH_CONTINUATION=1' >> $HOME/.bashrc
+echo '  POWERLINE_BASH_SELECT=1' >> $HOME/.bashrc
+echo '  source /usr/share/powerline/bindings/bash/powerline.sh' >> $HOME/.bashrc
+echo 'fi' >> $HOME/.bashrc
 echo '' >> $HOME/.bashrc
 
 # Make vim use Powerline
-echo 'python3 from powerline.vim import setup as powerline_setup' >> ~/.vimrc
-echo 'python3 powerline_setup()' >> ~/.vimrc
-echo 'python3 del powerline_setup' >> ~/.vimrc
-echo 'set laststatus=2' >> ~/.vimrc
+echo 'python3 from powerline.vim import setup as powerline_setup' >> $HOME/.vimrc
+echo 'python3 powerline_setup()' >> $HOME/.vimrc
+echo 'python3 del powerline_setup' >> $HOME/.vimrc
+echo 'set laststatus=2' >> $HOME/.vimrc
 echo '' >> $HOME/.vimrc
 
 # Install Ruby, with Bundler and Jekyll
 sudo apt install -y \
 ruby \
 ruby-dev
-echo '# Install Ruby Gems to ~/.gems' >> ~/.bashrc
-echo 'export GEM_HOME="$HOME/.gems"' >> ~/.bashrc
-echo 'export PATH="$HOME/.gems/bin:$PATH"' >> ~/.bashrc
+echo '# Install Ruby Gems to ~/.gems' >> $HOME/.bashrc
+echo 'export GEM_HOME="$HOME/.gems"' >> $HOME/.bashrc
+echo 'export PATH="$HOME/.gems/bin:$PATH"' >> $HOME/.bashrc
 echo '' >> $HOME/.bashrc
 
 echo 'Reload the configuration for Bash with "source ~/.bashrc"'
