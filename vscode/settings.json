@@ -25,7 +25,11 @@
     "terminal.integrated.fontFamily": "'Cascadia Mono PL'",
     "terminal.integrated.fontWeight": "350",
     "[markdown]": {
-        "editor.quickSuggestions": false
+        "editor.quickSuggestions": {
+            "other": "off",
+            "comments": "off",
+            "strings": "off"
+        }
     },
     "[html]": {
         "editor.tabSize": 2,
