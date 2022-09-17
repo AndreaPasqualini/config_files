@@ -1,6 +1,7 @@
 {
     "telemetry.telemetryLevel": "off",
     "window.titleBarStyle": "custom",
+    "window.commandCenter": true,
     "workbench.colorTheme": "Panda Syntax",
     "workbench.iconTheme": "vscode-icons",
     "workbench.startupEditor": "none",
