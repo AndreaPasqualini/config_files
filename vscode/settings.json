@@ -23,6 +23,7 @@
     "editor.renderWhitespace": "selection",
     "editor.minimap.maxColumn": 80,
     "editor.mouseWheelScrollSensitivity": 2,
+    "terminal.integrated.minimumContrastRatio": 1,
     "terminal.integrated.fontFamily": "'Cascadia Mono PL'",
     "terminal.integrated.fontWeight": "350",
     "[markdown]": {
