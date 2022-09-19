@@ -24,3 +24,9 @@ sudo apt install -y r-base r-base-dev
 # Install radian
 sudo apt install -y python3-pip
 sudo pip3 install radian
+
+# R relies on timedatectl to figure out the system's timezone, but WSL does not boot with systemd
+echo '' | sudo tee -a /etc/R/Renviron
+echo '# Prevent R from using timedatectl, which is unavailable on WSL environments' | sudo tee -a /etc/R/Renviron
+echo 'TZ=Europe/London' | sudo tee -a /etc/R/Renviron
+echo '' | sudo tee -a /etc/R/Renviron
