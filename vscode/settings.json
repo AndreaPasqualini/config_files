@@ -83,13 +83,13 @@
         "*.snm"
     ],
     "markdown.extension.italic.indicator": "_",
+    "markdown.extension.orderedList.marker": "one",
+    "markdown.preview.fontSize": 15,
+    "git.autofetch": true,
+    "git.confirmSync": false,
     "overtype.paste": true,
     "csv-preview.numberFormat": "g4",
-    "markdown.extension.orderedList.marker": "one",
-    "git.autofetch": true,
     "clock.datetimeFormat": "H:mm",
     "jupyter.askForKernelRestart": false,
-    "markdown.preview.fontSize": 15,
-    "git.confirmSync": false,
-    "spellright.notificationClass": "warning"
+    "spellright.notificationClass": "warning",
   }
