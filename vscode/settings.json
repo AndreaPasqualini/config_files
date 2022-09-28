@@ -92,4 +92,5 @@
     "clock.datetimeFormat": "H:mm",
     "jupyter.askForKernelRestart": false,
     "spellright.notificationClass": "warning",
+    "spellright.language": ["en"]
   }
