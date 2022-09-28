@@ -17,12 +17,12 @@ dirmngr
 
 # Register CRAN's repository
 wget -qO- https://cloud.r-project.org/bin/linux/ubuntu/marutter_pubkey.asc | sudo tee -a /etc/apt/trusted.gpg.d/cran_ubuntu_key.asc
-add-apt-repository "deb https://cloud.r-project.org/bin/linux/ubuntu $(lsb_release -cs)-cran40/"
+sudo add-apt-repository "deb https://cloud.r-project.org/bin/linux/ubuntu $(lsb_release -cs)-cran40/"
 sudo apt update
 sudo apt install -y --no-install-recommends r-base r-base-dev
 
 # If on WSL, prevent R from relying on timedatectl, usually provided by systemd
-if grep -qi [M|m]icrosoft /proc/version; then
+if grep -qi microsoft /proc/version; then
     echo '' | sudo tee -a /etc/R/Renviron
     echo '# Prevent R from relying on timedatectl (systemd) because unavailable' | sudo tee -a /etc/R/Renviron
     echo 'TZ=Europe/London' | sudo tee -a /etc/R/Renviron
