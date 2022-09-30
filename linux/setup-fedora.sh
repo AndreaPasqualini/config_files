@@ -6,7 +6,7 @@ sudo dnf install neofetch tldr pdftk gnome-tweaks gnome-console powerline vim-po
 
 sudo dnf install gnome-extensions gnome-shell-extension-appindicator gnome-shell-extension-caffeine gnome-shell-extension-just-perfection gnome-shell-extension-native-window-placement
 
-sudo dnf install texlive-scheme-basic texlive-cm-super texlive-cm-unicode texlive-biblatex texlive-biblatex-apa texlive-biblatex-apa6 texlive-apa texlive-apa6 texlive-apa7 texlive-appendix texlive-amsmath texlive-amsfonts texlive-etoolbox texlive-hyph-utf8 texlive-hyphen-english texlive-hyphen-italian texlive-babel texlive-babel-english texlive-babel-italian texlive-beamer texlive-beamertheme-metropolis texlive-beamertheme-focus texlive-fourier texlive-fancyhdr texlive-graphics texlive-pgf texlive-pgfplots texlive-plex texlive-latex-fonts texlive-lipsum texlive-listings texlive-mathtools texlive-mathastext texlive-paralist texlive-soul texlive-pdftricks texlive-pdftricks2 texlive-titlesec texlive-titling texlive-xcolor biber latexmk texlive-dvipng
+sudo dnf install texlive-base texlive-collection-basic texlive-collection-binextra texlive-collection-plaingeneric texlive-collection-latex texlive-collection-latexrecommended texlive-collection-latexextra texlive-collection-fontsrecommended texlive-collection-fontsextra texlive-collection-mathscience texlive-collection-pictures texlive-collection-bibtexextra texlive-collection-publishers texlive-collection-langenglish texlive-collection-langitalian
 
 sudo dnf install R-core R-core-devel libcurl-devel openssl-devel
 
