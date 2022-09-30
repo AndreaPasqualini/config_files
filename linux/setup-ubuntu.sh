@@ -31,3 +31,16 @@ echo 'export GEM_HOME="$HOME/.gems"' >> ~/.bashrc
 echo 'export PATH="$HOME/.gems/bin:$PATH"' >> ~/.bashrc
 # source ~/.bashrc
 # gem install bundler jekyll
+
+# Install btop
+cd $HOME/Downloads
+wget --quiet --show-progress https://github.com/aristocratos/btop/releases/download/v1.2.9/btop-x86_64-linux-musl.tbz
+mkdir btop
+tar xf ./btop-x86_64-linux-musl.tbz --directory=btop
+cd btop
+sudo make install
+sudo make setuid
+cd ..
+rm ./btop/ -rf
+rm ./btop-x86_64-linux-musl.tbz
+cd $HOME
