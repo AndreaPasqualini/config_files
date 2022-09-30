@@ -7,6 +7,7 @@ sudo dnf install neofetch tldr pdftk powerline vim-powerline
 
 # Install GUI programs
 sudo dnf install gnome-console gnome-tweaks dconf-editor solaar darktable inkscape
+flatpak install flathub de.haeckerfelix.Fragments nl.hjdskes.gcolor3 net.daase.journable org.telegram.desktop org.signal.Signal io.github.mimbrero.WhatsAppDesktop com.spotify.Client
 
 # Install fonts
 sudo dnf install ibm-plex-fonts-all cascadia-fonts-all google-noto-fonts-common
