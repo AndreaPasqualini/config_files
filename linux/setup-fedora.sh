@@ -31,6 +31,15 @@ sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.m
 sudo dnf check-update
 sudo dnf install code
 
-sudo dnf config-manager --add-repo https://yum.repos.intel.com/mkl/setup/intel-mkl.repo
-sudo rpm --import https://yum.repos.intel.com/intel-gpg-keys/GPG-PUB-KEY-INTEL-SW-PRODUCTS-2019.PUB
-sudo dnf install intel-mkl # or a specific version, e.g. intel-mkl-2020.0-088
+# Install libinput-config, to slow down two-finger scrolling on touchpad
+sudo dnf install systemd-devel libinput-devel meson
+echo 'scroll-factor=0.3' | sudo tee -a /etc/libinput.conf
+cd $HOME/Git
+git clone https://gitlab.com/warningnonpotablewater/libinput-config.git
+cd libinput-config
+meson build
+cd build
+ninja
+sudo ninja install
+cd $HOME
+
