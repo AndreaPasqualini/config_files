@@ -61,3 +61,7 @@ rm ./btop/ -rf
 rm ./btop-x86_64-linux-musl.tbz
 cd $HOME
 
+# Make neofetch use Windows' logo
+neofetch
+sed -i 's/ascii_distro="auto"/ascii_distro="windows10"/' $HOME/.config/neofetch/config.conf
+clear && neofetch
