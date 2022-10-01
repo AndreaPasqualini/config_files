@@ -13,7 +13,7 @@ flatpak install flathub de.haeckerfelix.Fragments nl.hjdskes.gcolor3 net.daase.j
 sudo dnf install ibm-plex-fonts-all cascadia-fonts-all google-noto-fonts-common
 
 # Install Gnome extensions
-sudo dnf install gnome-extensions gnome-shell-extension-appindicator gnome-shell-extension-caffeine gnome-shell-extension-just-perfection gnome-shell-extension-native-window-placement
+sudo dnf install gnome-extensions-app gnome-shell-extension-appindicator gnome-shell-extension-caffeine gnome-shell-extension-just-perfection gnome-shell-extension-mediacontrols
 
 # Install subset of TeXlive distribution
 sudo dnf install texlive-base texlive-collection-basic texlive-collection-binextra texlive-collection-plaingeneric texlive-collection-latex texlive-collection-latexrecommended texlive-collection-latexextra texlive-collection-fontsrecommended texlive-collection-fontsextra texlive-collection-mathscience texlive-collection-pictures texlive-collection-bibtexextra texlive-collection-publishers texlive-collection-langenglish texlive-collection-langitalian
