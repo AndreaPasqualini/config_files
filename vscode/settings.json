@@ -80,7 +80,9 @@
         "*.fdb_latexmk",
         "*.synctex.gz",
         "*.nav",
-        "*.snm"
+        "*.snm",
+        "*.bcf",
+        "*.run.xml"
     ],
     "markdown.extension.italic.indicator": "_",
     "markdown.extension.orderedList.marker": "one",
