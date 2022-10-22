@@ -1,6 +1,7 @@
 mkdir $HOME/Git
 
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+flatpak remote-modify --enable flathub
 
 # Install CLI programs
 sudo dnf install neofetch tldr pdftk powerline vim-powerline
