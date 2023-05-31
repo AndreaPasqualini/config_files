@@ -19,6 +19,11 @@ sudo dnf swap mesa-vdpau-drivers mesa-vdpau-drivers-freeworld
 # Install CLI programs
 sudo dnf install -y fastfetch tldr pdftk btop
 
+# Install Oh My Posh and make Bash use it
+curl -s https://ohmyposh.dev/install.sh | bash -s -- -d $HOME/.local/bin
+echo '' >> $HOME/.bashrc
+echo '# Make Bash use Oh My Posh' >> $HOME/.bashrc
+echo 'eval "$(oh-my-posh init bash --config '$HOME/.cache/themes/blue-owl.omp.json')"' >> $HOME/.bashrc
 
 # Install GUI programs
 sudo dnf install -y gnome-console gnome-tweaks dconf-editor gnome-extensions-app solaar darktable inkscape
