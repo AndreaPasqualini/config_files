@@ -4,14 +4,12 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 flatpak remote-modify --enable flathub
 
 # Install CLI programs
-sudo dnf install -y neofetch tldr pdftk powerline vim-powerline
+sudo dnf install -y fastfetch tldr pdftk btop
 
 # Install GUI programs
 sudo dnf install -y gnome-console gnome-tweaks dconf-editor solaar darktable inkscape
 flatpak install -y flathub de.haeckerfelix.Fragments nl.hjdskes.gcolor3 net.daase.journable org.telegram.desktop org.signal.Signal io.github.mimbrero.WhatsAppDesktop com.spotify.Client
 
-# Install fonts
-sudo dnf install -y ibm-plex-fonts-all cascadia-fonts-all google-noto-fonts-common
 
 # Install Gnome extensions
 sudo dnf install -y gnome-extensions-app gnome-shell-extension-appindicator gnome-shell-extension-caffeine gnome-shell-extension-just-perfection gnome-shell-extension-mediacontrols
@@ -35,7 +33,7 @@ sudo dnf install -y code
 
 # Install libinput-config, to slow down two-finger scrolling on touchpad
 sudo dnf install -y systemd-devel libinput-devel meson
-echo 'scroll-factor=0.3' | sudo tee -a /etc/libinput.conf
+echo 'scroll-factor=0.4' | sudo tee -a /etc/libinput.conf
 cd $HOME/Git
 git clone https://gitlab.com/warningnonpotablewater/libinput-config.git
 cd libinput-config
@@ -43,17 +41,4 @@ meson build
 cd build
 ninja
 sudo ninja install
-cd $HOME
-
-# Install btop
-cd $HOME/Downloads
-wget --quiet --show-progress https://github.com/aristocratos/btop/releases/download/v1.2.9/btop-x86_64-linux-musl.tbz
-mkdir btop
-tar xf ./btop-x86_64-linux-musl.tbz --directory=btop
-cd btop
-sudo make install
-sudo make setuid
-cd ..
-rm ./btop/ -rf
-rm ./btop-x86_64-linux-musl.tbz
 cd $HOME
