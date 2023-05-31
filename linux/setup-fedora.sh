@@ -6,10 +6,10 @@ flatpak remote-modify --enable flathub
 # Install CLI programs
 sudo dnf install -y fastfetch tldr pdftk btop
 
-# Install GUI programs
-sudo dnf install -y gnome-console gnome-tweaks dconf-editor solaar darktable inkscape
-flatpak install -y flathub de.haeckerfelix.Fragments nl.hjdskes.gcolor3 net.daase.journable org.telegram.desktop org.signal.Signal io.github.mimbrero.WhatsAppDesktop com.spotify.Client
 
+# Install GUI programs
+sudo dnf install -y gnome-console gnome-tweaks dconf-editor gnome-extensions-app solaar darktable inkscape
+flatpak install -y flathub de.haeckerfelix.Fragments nl.hjdskes.gcolor3 md.obsidian.Obsidian org.telegram.desktop org.signal.Signal io.github.mimbrero.WhatsAppDesktop com.spotify.Client
 
 # Install Gnome extensions
 sudo dnf install -y gnome-extensions-app gnome-shell-extension-appindicator gnome-shell-extension-caffeine gnome-shell-extension-just-perfection gnome-shell-extension-mediacontrols
