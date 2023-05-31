@@ -39,9 +39,9 @@ sudo dnf install -y texlive-base texlive-collection-basic texlive-collection-bin
 sudo dnf install -y R-core R-core-devel libcurl-devel openssl-devel libxml2-devel
 
 # Install MKL
-sudo dnf config-manager --add-repo https://yum.repos.intel.com/mkl/setup/intel-mkl.repo
-sudo rpm --import https://yum.repos.intel.com/intel-gpg-keys/GPG-PUB-KEY-INTEL-SW-PRODUCTS-2019.PUB
-sudo dnf install -y intel-mkl # or a specific version, e.g. intel-mkl-2020.0-088
+# sudo dnf config-manager --add-repo https://yum.repos.intel.com/mkl/setup/intel-mkl.repo
+# sudo rpm --import https://yum.repos.intel.com/intel-gpg-keys/GPG-PUB-KEY-INTEL-SW-PRODUCTS-2019.PUB
+# sudo dnf install -y intel-mkl # or a specific version, e.g. intel-mkl-2020.0-088
 
 # Install VS Code
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
